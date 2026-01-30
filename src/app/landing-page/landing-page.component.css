@@ -1,0 +1,12 @@
+* {
+  color: #F5F5DC;
+}
+
+.landing-page-container {
+  height: 100dvh;
+  background-color: #10310B;
+}
+
+.go-to-cookbook-span {
+  color: #008000;
+}
