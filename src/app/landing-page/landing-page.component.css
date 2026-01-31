@@ -5,6 +5,16 @@
 .landing-page-container {
   height: 100dvh;
   background-color: #10310B;
+  padding-left: 65px;
+  padding-right: 40px;
+  padding-top: 40px;
+}
+
+.title-description-container {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  top: 240px;
 }
 
 .title-description {
@@ -16,6 +26,7 @@
 
 .main-title {
   font-style: bold;
+  font-weight: 700;
   line-height: 100%;
   letter-spacing: 0%;
   font-size: 104px;
@@ -23,22 +34,37 @@
 
 .landing-page-second-container {
   display: flex;
+  top: 846px;
 }
 
 .get-started-button {
   background-color: #FAF0E6;
   padding-top: 16px;
   padding-right: 26px;
-  padding-bottom: 26px;
-  padding-left: 16px;
+  padding-bottom: 16px;
+  padding-left: 26px;
   display: flex;
+  align-self: flex-start;
 }
 
 .get-started-span {
+  font-size: 24px;
   font-weight: 600;
   line-height: 100%;
   letter-spacing: 0%;
   color: #008000;
+}
+
+.go-to-cookbook-button {
+  background-color: transparent;
+  border: none;
+}
+
+.go-to-cookbook-span {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 0%;
 }
 
 .hungry-for-insperation-span {
