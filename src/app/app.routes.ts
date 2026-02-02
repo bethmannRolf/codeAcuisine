@@ -6,7 +6,8 @@ import { GenerateRecipePageComponent } from './generate-recipe-page/generate-rec
 export const routes: Routes = [
 
     {path:'', component:LandingPageComponent},
-    {path: 'cookbook', component: GenerateRecipePageComponent}
+    {path: 'recipeGenerator', component: GenerateRecipePageComponent},
+     {path: 'cookbook', component: GenerateRecipePageComponent}
 
 
 ];
