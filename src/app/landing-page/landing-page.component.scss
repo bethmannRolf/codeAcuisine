@@ -3,14 +3,49 @@
 
 }
 
+.landing-page-whole-container{
+      background-color: #10310B;
+      height: 100dvh;
+          padding-left: 65px;
+    padding-right: 40px;
+    padding-top: 40px;
+}
 
 
 .landing-page-container {
-    height: 100dvh;
-    background-color: #10310B;
-    padding-left: 65px;
-    padding-right: 40px;
-    padding-top: 40px;
+   display: flex;
+   justify-content: space-between;
+   
+
+}
+
+.landingpage-left-side-container{
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+}
+
+
+.landing-page-second-container {
+    display: flex;
+ 
+
+}
+
+
+
+
+
+.landingpage-dishes-container{
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+  
+    height: 100vh;
+}
+
+.dish-landing-page{
+    margin-top: -170px;
 }
 
 
@@ -18,7 +53,7 @@
     display: flex;
     flex-direction: column;
     gap: 64px;
-    top: 240px;
+    
 }
 
 .title-description {
@@ -50,11 +85,6 @@
 }
 
 
-.landing-page-second-container {
-    display: flex;
-    top: 846px;
-
-}
 
 .get-started-button {
     background-color: #FAF0E6;
@@ -67,7 +97,10 @@
     
 }
 
-
+// .dish-size{
+//     width: 484px;
+//     height: 484px;
+// }
 
 
 .get-started-span {
@@ -102,4 +135,10 @@
     font-size: 32px;
     line-height: 104%;
     letter-spacing: 0%;
+}
+
+.landingpage-dishes-container{
+margin-top: -176px;
+
+
 }
