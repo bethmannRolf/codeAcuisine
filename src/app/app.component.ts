@@ -5,7 +5,7 @@ import { ImprintComponent } from "./imprint/imprint.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, LandingPageComponent],
+  imports: [RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

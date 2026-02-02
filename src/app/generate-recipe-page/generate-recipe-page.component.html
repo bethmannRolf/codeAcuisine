@@ -2,37 +2,42 @@
     <app-header-top-green></app-header-top-green>
     <div class="generate-recipe-box">
         <span class="heading-generate-recipe">Generate recipe</span>
-        <span class="description">Got random stuff in your kitchen? Pop it in - we've got the perfect recipe
-            waiting</span>
+        <div class="inner-column">
+            <span class="description">Got random stuff in your kitchen? Pop it in - we've got the perfect recipe
+                waiting</span>
 
-        <div class="container-for-lists">
-            <div class="ingredients-left-side">
-                <div class="ingredients-input-left-side">
-                    <span class="heading-ingredients-input-left-side">Ingredients</span>
-                    <input class="ingredients-input-styling">
-                </div>
-                <div class="size-input-left-side">
-                     <span class="serving-size-styling">Serving size</span>
-                    <div class="size-input-second-line">
-                        <input placeholder="100" class="number-size-ingredients">
-                        <select class="drop-down-ingredients" id="fruits" name="fruits">
-                            <option value="gram">gram</option>
-                            <option value="ml">ml</option>
-                            <option value="test">test</option>
-                        </select>
-                           <img class="add-ingredient-button" src="/assets/addImage.svg">
-
+            <div class="container-for-lists">
+                <div class="ingredients-left-side">
+                    <div class="ingredients-input-left-side">
+                        <span class="heading-ingredients-input-left-side">Ingredients</span>
+                        <input class="ingredients-input-styling">
                     </div>
+                    <div class="size-input-left-side">
+                        <span class="serving-size-styling">Serving size</span>
+                        <div class="size-input-second-line">
+                            <input placeholder="100" class="number-size-ingredients">
+                            <select class="drop-down-ingredients" id="fruits" name="fruits">
+                                <option value="gram">gram</option>
+                                <option value="ml">ml</option>
+                                <option value="test">test</option>
+                            </select>
+                            <img class="add-ingredient-button" src="/assets/addImage.svg">
+
+                        </div>
+                    </div>
+
+
                 </div>
 
+                <div class="ingredients-output-list">
+                    <span class="ingredient-list-right-heading">List of your ingredient</span>
+
+
+                </div>
 
             </div>
+            <div class="flex-end-next-coontainer"><button class="next-button ">Next step</button></div>
 
-            <div class="ingredients-output-list">
-                <span class="ingredient-list-right-heading">List of your ingredient</span>
-
-
-            </div>
         </div>
     </div>
 
