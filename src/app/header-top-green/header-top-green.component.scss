@@ -1,11 +1,16 @@
 .whole-header {
     max-width: 1440px;
     height: 136px;
+    padding-left: 65px;
+    padding-right: 40px;
+    padding-top: 40px;
+
 }
 
 .headerTopMenuBar {
     display: flex;
     justify-content: flex-start;
+
     &:hover {
         cursor: pointer;
     }

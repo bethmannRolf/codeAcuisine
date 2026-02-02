@@ -1,86 +1,82 @@
 * {
-    color: #F5F5DC;
+  color: #F5F5DC;
 
 }
 
-.landing-page-whole-container{
-      background-color: #10310B;
-      height: 100dvh;
-          padding-left: 65px;
-    padding-right: 40px;
-    padding-top: 40px;
+.landing-page-whole-container {
+  background-color: #10310B;
+  height: 100dvh;
+  padding-left: 65px;
+  padding-right: 40px;
+  padding-top: 40px;
 }
 
 
 .landing-page-container {
-   display: flex;
-   justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
-.landingpage-left-side-container{
-display: flex;
-flex-direction: column;
-justify-content: space-around;
+.landingpage-left-side-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 
 .landing-page-second-container {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    // justify-content:space-around;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  // justify-content:space-around;
 }
 
 
 
 
 
-.landingpage-dishes-container{
-    max-width: 480px;
-    display: flex;
-    flex-direction: column;
-  
-    height: 100vh;
+.landingpage-dishes-container {
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+
+  height: 100vh;
 }
 
-.dish-landing-page{
-    margin-top: -170px;
+.dish-landing-page {
+  margin-top: -170px;
 }
 
 
 .title-description-container {
-    display: flex;
-    flex-direction: column;
-    gap: 64px; 
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
 }
 
 .title-description {
-    //font style and type : quicksand
-    font-weight: 600;
-    font-size: 48px;
-    line-height: 100%;
-    letter-spacing: 0%;
+  //font style and type : quicksand
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: 0%;
 }
 
 .main-title {
-    // font family and fonttype ubuntu
-    font-style: bold;
-    font-weight: 700;
-    line-height: 100%;
-    letter-spacing: 0%;
-    font-size: 104px;
+  // font family and fonttype ubuntu
+  font-style: bold;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0%;
+  font-size: 104px;
 
 }
 
 
 
-.hungry-for-insperation-span {
+.hungry-for-insperation-span {}
 
-}
-
-.go-to-cookbook-button {
-
-}
+.go-to-cookbook-button {}
 
 
 
@@ -90,7 +86,7 @@ justify-content: space-around;
   display: flex;
   align-self: flex-start;
 
-  transition: 
+  transition:
     background-color 0.25s ease,
     transform 0.25s ease;
 
@@ -109,13 +105,13 @@ justify-content: space-around;
 
 
 .get-started-span {
-    //font-name  quicksand
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 100%;
-    letter-spacing: 0%;
+  //font-name  quicksand
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: 0%;
 
-    color: #008000;
+  color: #008000;
 }
 
 
@@ -139,19 +135,19 @@ justify-content: space-around;
 }
 
 
-.test{
-    display: flex;
-    justify-content: end;
+.test {
+  display: flex;
+  justify-content: end;
 }
 
 
 .go-to-cookbook-span {
-    //font-name  quicksand
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 20px;
-    letter-spacing: 0%;
-    
+  //font-name  quicksand
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 0%;
+
 
 
 
@@ -159,14 +155,14 @@ justify-content: space-around;
 
 
 .hungry-for-insperation-span {
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 104%;
-    letter-spacing: 0%;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 104%;
+  letter-spacing: 0%;
 }
 
-.landingpage-dishes-container{
-margin-top: -176px;
+.landingpage-dishes-container {
+  margin-top: -176px;
   overflow: hidden;
 
 
