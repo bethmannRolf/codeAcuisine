@@ -23,6 +23,8 @@
 
 .landing-page-second-container {
   display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
 .landingpage-dishes-container {
@@ -59,12 +61,20 @@
 
 .get-started-button {
   background-color: #FAF0E6;
-  padding-top: 16px;
-  padding-right: 26px;
-  padding-bottom: 16px;
-  padding-left: 26px;
+  padding: 16px 26px;
   display: flex;
   align-self: flex-start;
+  transition: background-color 0.25s ease, transform 0.25s ease;
+}
+
+.get-started-button:hover {
+  cursor: pointer;
+  background-color: #FAE0C6;
+  transform: scale(1.08);
+}
+
+.get-started-button:active {
+  transform: scale(1.03);
 }
 
 .get-started-span {
@@ -76,8 +86,22 @@
 }
 
 .go-to-cookbook-button {
+  display: flex;
+  gap: 10px;
+  padding: 16px 26px;
   background-color: transparent;
   border: none;
+  transition: background-color 0.25s ease, transform 0.25s ease;
+}
+
+.go-to-cookbook-button:hover {
+  cursor: pointer;
+  background-color: rgba(57, 96, 57, 0.9);
+}
+
+.test {
+  display: flex;
+  justify-content: end;
 }
 
 .go-to-cookbook-span {

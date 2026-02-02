@@ -15,8 +15,6 @@
 .landing-page-container {
    display: flex;
    justify-content: space-between;
-   
-
 }
 
 .landingpage-left-side-container{
@@ -28,8 +26,9 @@ justify-content: space-around;
 
 .landing-page-second-container {
     display: flex;
- 
-
+    align-items: center;
+    gap: 16px;
+    // justify-content:space-around;
 }
 
 
@@ -52,8 +51,7 @@ justify-content: space-around;
 .title-description-container {
     display: flex;
     flex-direction: column;
-    gap: 64px;
-    
+    gap: 64px; 
 }
 
 .title-description {
@@ -87,20 +85,27 @@ justify-content: space-around;
 
 
 .get-started-button {
-    background-color: #FAF0E6;
-    padding-top: 16px;
-    padding-right: 26px;
-    padding-bottom: 16px;
-    padding-left: 26px;
-    display: flex;
-    align-self: flex-start;
-    
+  background-color: #FAF0E6;
+  padding: 16px 26px;
+  display: flex;
+  align-self: flex-start;
+
+  transition: 
+    background-color 0.25s ease,
+    transform 0.25s ease;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #FAE0C6;
+    transform: scale(1.08);
+  }
+
+  &:active {
+    transform: scale(1.03);
+  }
 }
 
-// .dish-size{
-//     width: 484px;
-//     height: 484px;
-// }
+
 
 
 .get-started-span {
@@ -114,9 +119,29 @@ justify-content: space-around;
 }
 
 
-.go-to-cookbook-button{
-    background-color: transparent;
-    border: none;
+.go-to-cookbook-button {
+  display: flex;
+  gap: 10px;
+  padding: 16px 26px;
+  background-color: transparent;
+  border: none;
+
+  transition:
+    background-color 0.25s ease,
+    transform 0.25s ease;
+
+  &:hover {
+    cursor: pointer;
+    background-color: rgba(57, 96, 57, 0.9);
+  }
+
+
+}
+
+
+.test{
+    display: flex;
+    justify-content: end;
 }
 
 
@@ -126,6 +151,9 @@ justify-content: space-around;
     font-size: 20px;
     line-height: 20px;
     letter-spacing: 0%;
+    
+
+
 
 }
 

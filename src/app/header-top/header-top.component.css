@@ -6,5 +6,8 @@
 .headerTopMenuBar {
   display: flex;
   justify-content: flex-start;
-  gap: 32px;
+}
+
+.headerTopMenuBar:hover {
+  cursor: pointer;
 }
