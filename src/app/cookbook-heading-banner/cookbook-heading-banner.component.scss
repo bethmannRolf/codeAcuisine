@@ -1,0 +1,49 @@
+.banner-left-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    max-width: 454px;
+
+}
+
+
+.cookbook-heading {
+    //font quicksand
+    font-weight: 700;
+    font-style: bold;
+    font-size: 64px;
+    line-height: 65px;
+    letter-spacing: 0%;
+    color: rgba(30, 85, 21, 1);
+}
+
+.cookbook-text-style {
+    //font quicksand
+    font-weight: 500;
+    font-weight: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: rgba(16, 49, 11, 1);
+
+}
+
+.banner-left-container {
+
+    padding-top: 40px;
+    padding-right: 24px;
+    padding-bottom: 40px;
+     padding-left: 24px;
+}
+
+.whole-cookbook-banner{
+    display: flex;
+    align-items: center;
+    background-color: rgba(57, 96, 57, 0.04);
+    border-radius: 20px;
+
+}
+
+.right-upper-line{
+    display: flex;
+    gap: 16px;
+}
