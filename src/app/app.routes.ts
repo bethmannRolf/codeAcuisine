@@ -5,12 +5,15 @@ import { GenerateRecipePageComponent } from './generate-recipe-page/generate-rec
 import { CookbookCountryBoxComponent } from './cookbook-country-box/cookbook-country-box.component';
 import { CountryPageComponent } from './country-page/country-page.component';
 import { CookbookComponent } from './cookbook/cookbook.component';
+import { ChoosePreferencePageComponent } from './choose-preference-page/choose-preference-page.component';
 
 export const routes: Routes = [
 
-    {path:'', component:LandingPageComponent},
+    {path:'lala', component:LandingPageComponent},
     {path: 'recipeGenerator', component: GenerateRecipePageComponent},
-     {path: 'cookbook', component: CookbookComponent}
+     {path: 'cookbook', component: CookbookComponent},
+       {path: '', component: ChoosePreferencePageComponent} //for testibng
+
 
 
 ];
