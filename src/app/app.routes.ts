@@ -12,7 +12,7 @@ export const routes: Routes = [
     {path:'lala', component:LandingPageComponent},
     {path: 'recipeGenerator', component: GenerateRecipePageComponent},
      {path: 'cookbook', component: CookbookComponent},
-       {path: '', component: ChoosePreferencePageComponent} //for testibng
+       {path: '', component: ChoosePreferencePageComponent} //for testing
 
 
 
