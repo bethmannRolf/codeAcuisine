@@ -7,47 +7,59 @@
         </div>
     </div>
 
-    <div class="content-container preferences">
+    <div class="content-container-preferences">
 
-        <div class="">
-            <span>Choose your preferences</span>
+        <div class="choose-preferences-heading-conntainer">
+            <span class="choose-preference-heading">Choose your preferences</span>
         </div>
+
         <div class="content-over-box">
+
             <div class="left-side">
-                <span></span>
+                <span class="portions-cooking-style">How many portions you need?</span>
                 <div class="portion-choosing-line">
-                    <img class="minus button-image" src="">
-                    <span class="-portions-number">1</span><!--just a random number as current placeholder-->
+                    <img class="minus button-image button-preference-cook-choosing"
+                        src="/assets/minusAndFrameGreen.svg">
+                    <span
+                        class="portions-number portions-people-number">1</span><!--just a random number as current placeholder-->
                     <span class="portion-span">Portions</span>
-                    <img class="add-button-image" src="">
+                    <img class="add-button-image button-preference-cook-choosing" src="/assets/plusAndFrameGreen.svg">
                 </div>
             </div>
             <div class="right-side">
                 <span class="how-many-span">How many are cooking</span>
                 <div class="add-person-line">
-                    <img class="minus button-image" src="">
-                    <span class="people-number">1</span><!--just a random number as current placeholder-->
+                    <img class="minus button-image button-preference-cook-choosing"
+                        src="/assets/minusAndFrameGreen.svg">
+                    <span
+                        class="people-number portions-people-number">1</span><!--just a random number as current placeholder-->
                     <span class="portion-span">People</span>
-                    <img class="add-button-image" src="">
+                    <img class="add-button-image button-preference-cook-choosing" src="/assets/minusAndFrameGreen.svg">
                 </div>
             </div>
         </div>
         <div class="green-central-box">
             <div class="cooking-time-container">
-                <div class="cooking-tinme-heading">
-                    <img class="cooking-time-clock-image" src="">
-                    <span>Cooking time</span>
-                    <div class="time-buttons">
-                        <div class="quick-container">
-                            <span></span>
-                        </div>
-                        <div class="medium-container"><span></span></div>
-
-                        <div class="complex-container">
-                            <span></span>
-                        </div>
-
-                    </div>
+                <div>
+                    <img>    <!-- needs clock image-->
+                    <span class="cooking-time-heading">Cooking time:</span>
+                </div>
+                <div class="cooking-options">
+                    <input type="radio" id="quick" name="cookingTime" value="quick">
+                    <label for="quick">
+                        <span class="cooking-option-style">Quick</span>
+                        <span class="cooking-time-style">up to 20 min</span>
+                    </label>
+                    <input type="radio" id="medium" name="cookingTime" value="medium">
+                    <label for="medium">
+                        <span class="cooking-option-style">Medium</span>
+                        <span class="cooking-time-style">25-40 min</span>
+                    </label>
+                    <input type="radio" id="complex" name="cookingTime" value="complex">
+                    <label for="complex">
+                        <span class="cooking-option-style">Complex</span>
+                        <span class="cooking-time-style">over 45 min</span>
+                    </label>
                 </div>
             </div>
 
@@ -66,6 +78,8 @@
         </div>
 
     </div>
+
+
 
 
 
