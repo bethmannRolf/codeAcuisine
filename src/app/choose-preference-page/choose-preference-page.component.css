@@ -74,13 +74,43 @@
   padding-left: 5px;
 }
 
-.left-side, .right-side {
+.left-side,
+.right-side {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
-.portion-choosing-line, .add-person-line {
+.portion-choosing-line,
+.add-person-line {
   display: flex;
   gap: 8px;
+}
+
+.category-image-style {
+  width: 20px;
+  height: 20px;
+}
+
+.preference-category-headingg {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.cooking-option-style {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  color: #1e5515;
+}
+
+.cooking-time-style {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 10px;
+  letter-spacing: 0%;
+  color: #1e5515;
 }

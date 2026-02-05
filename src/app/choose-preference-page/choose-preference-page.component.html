@@ -40,9 +40,9 @@
         </div>
         <div class="green-central-box">
             <div class="cooking-time-container">
-                <div>
-                    <img>    <!-- needs clock image-->
-                    <span class="cooking-time-heading">Cooking time:</span>
+                <div class="category-heading-container">
+                    <img src="/assets/clockGreen.svg">
+                    <span class="preference-category-heading">Cooking time:</span>
                 </div>
                 <div class="cooking-options">
                     <input type="radio" id="quick" name="cookingTime" value="quick">
@@ -64,12 +64,65 @@
             </div>
 
             <div class="cuisine-box">
-                <div class="cuisine-heading-container">
-                    <img>
-                    <span class=""></span>
+                <div class="category-heading-container">
+                    <img src="/assets/worldGreen.svg">
+                    <span class="preference-category-heading">Cuisine</span>
                 </div>
+                <div class="cooking-options">
+                    <input type="radio" id="german" name="cuisine" value="german">
+                    <label for="german">
+                        <span class="cooking-option-style">German</span>
+                    </label>
+                    <input type="radio" id="Italian" name="cuisine" value="italian">
+                    <label for="italian">
+                        <span class="cooking-option-style">Italian</span>
+                    </label>
+                    <input type="radio" id="indian" name="cuisine" value="indian">
+                    <label for="indian">
+                        <span class="cooking-option-style">Indian</span>
+                    </label>
+                    <input type="radio" id="japanese" name="cuisine" value="japanese">
+                    <label for="japanese">
+                        <span class="cooking-option-style">Japanese</span>
+                    </label>
+                    <input type="radio" id="Gourmet" name="cuisine" value="gourmet">
+                    <label for="gourmet">
+                        <span class="cooking-option-style">Gourmet</span>
+                    </label>
+                    <input type="radio" id="Fusion" name="cuisine" value="fusion">
+                    <label for="fusion">
+                        <span class="cooking-option-style">Fusion</span>
+                    </label>
+                </div>
+
             </div>
 
+
+
+            <!--  -->
+            <div class="diet-preferences-container">
+                <div class="category-heading-container">
+                    <img src="/assets/clockGreen.svg">
+                    <span class="preference-category-heading">Cooking time:</span>
+                </div>
+                <div class="cooking-options">
+                    <input type="radio" id="quick" name="cookingTime" value="quick">
+                    <label for="quick">
+                        <span class="cooking-option-style">Quick</span>
+                        <span class="cooking-time-style">up to 20 min</span>
+                    </label>
+                    <input type="radio" id="medium" name="cookingTime" value="medium">
+                    <label for="medium">
+                        <span class="cooking-option-style">Medium</span>
+                        <span class="cooking-time-style">25-40 min</span>
+                    </label>
+                    <input type="radio" id="complex" name="cookingTime" value="complex">
+                    <label for="complex">
+                        <span class="cooking-option-style">Complex</span>
+                        <span class="cooking-time-style">over 45 min</span>
+                    </label>
+                </div>
+            </div>
 
 
         </div>
