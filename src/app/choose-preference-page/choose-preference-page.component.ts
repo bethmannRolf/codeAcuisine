@@ -4,7 +4,7 @@ import { HeaderTopGreenComponent } from "../header-top-green/header-top-green.co
 
 @Component({
   selector: 'app-choose-preference-page',
-  imports: [HeaderTopComponent, HeaderTopGreenComponent],
+  imports: [ HeaderTopGreenComponent],
   templateUrl: './choose-preference-page.component.html',
   styleUrl: './choose-preference-page.component.scss',
 })

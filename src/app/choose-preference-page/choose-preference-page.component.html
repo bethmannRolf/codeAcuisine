@@ -12,7 +12,7 @@
         <div class="choose-preferences-heading-conntainer">
             <span class="choose-preference-heading">Choose your preferences</span>
         </div>
-
+<div class="central-box">
         <div class="content-over-box">
 
             <div class="left-side">
@@ -44,21 +44,21 @@
                     <img src="/assets/clockGreen.svg">
                     <span class="preference-category-heading">Cooking time:</span>
                 </div>
-                <div class="cooking-options">
+                <div class="options-container">
                     <input type="radio" id="quick" name="cookingTime" value="quick">
-                    <label for="quick">
-                        <span class="cooking-option-style">Quick</span>
-                        <span class="cooking-time-style">up to 20 min</span>
+                    <label class="flex-col flex-start" for="quick">
+                        <span class="option-title-style">Quick</span>
+                        <span class="option-description-title">up to 20 min</span>
                     </label>
                     <input type="radio" id="medium" name="cookingTime" value="medium">
-                    <label for="medium">
-                        <span class="cooking-option-style">Medium</span>
-                        <span class="cooking-time-style">25-40 min</span>
+                    <label class="flex-col" for="medium">
+                        <span class="option-title-style">Medium</span>
+                        <span class="option-description-title">25-40 min</span>
                     </label>
                     <input type="radio" id="complex" name="cookingTime" value="complex">
-                    <label for="complex">
-                        <span class="cooking-option-style">Complex</span>
-                        <span class="cooking-time-style">over 45 min</span>
+                    <label class="flex-col" for="complex">
+                        <span class="option-title-style">Complex</span>
+                        <span class="option-description-title">over 45 min</span>
                     </label>
                 </div>
             </div>
@@ -68,30 +68,30 @@
                     <img src="/assets/worldGreen.svg">
                     <span class="preference-category-heading">Cuisine</span>
                 </div>
-                <div class="cooking-options">
+                <div class="options-container">
                     <input type="radio" id="german" name="cuisine" value="german">
                     <label for="german">
-                        <span class="cooking-option-style">German</span>
+                        <span class="option-title-style">German</span>
                     </label>
                     <input type="radio" id="Italian" name="cuisine" value="italian">
                     <label for="italian">
-                        <span class="cooking-option-style">Italian</span>
+                        <span class="option-title-style">Italian</span>
                     </label>
                     <input type="radio" id="indian" name="cuisine" value="indian">
                     <label for="indian">
-                        <span class="cooking-option-style">Indian</span>
+                        <span class="option-title-style">Indian</span>
                     </label>
                     <input type="radio" id="japanese" name="cuisine" value="japanese">
                     <label for="japanese">
-                        <span class="cooking-option-style">Japanese</span>
+                        <span class="option-title-style">Japanese</span>
                     </label>
                     <input type="radio" id="Gourmet" name="cuisine" value="gourmet">
                     <label for="gourmet">
-                        <span class="cooking-option-style">Gourmet</span>
+                        <span class="option-title-style">Gourmet</span>
                     </label>
                     <input type="radio" id="Fusion" name="cuisine" value="fusion">
                     <label for="fusion">
-                        <span class="cooking-option-style">Fusion</span>
+                        <span class="option-title-style">Fusion</span>
                     </label>
                 </div>
 
@@ -125,6 +125,7 @@
             </div>
 
 
+        </div>
         </div>
         <div class="button-adjustment-div">
             <button class="generate-recipe-button"><span>Generate a recipe</span></button>

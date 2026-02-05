@@ -101,8 +101,6 @@
     display: flex;
     gap: 8px;
 
-
-
 }
 
 .category-image-style {
@@ -112,7 +110,7 @@
 
 }
 
-.preference-category-headingg {
+.preference-category-heading {
     //font quicksand
     font-weight: 500;
     font-size: 24px;
@@ -121,7 +119,7 @@
 }
 
 
-.cooking-option-style {
+.option-title-style{
     // font quicksand
     font-weight: 500;
     font-size: 20px;
@@ -130,7 +128,7 @@
     color: rgba(30, 85, 21, 1);
 }
 
-.cooking-time-style {
+.option-description-title{
     // font quicksand
     font-weight: 500;
     font-size: 14px;
@@ -141,5 +139,104 @@
 }
 
 .category-heading-container{
+    display: flex;
+    gap: 2px;
+    // padding-left: 12px;
     
+}
+
+.options-container{
+display: flex;
+gap: 20px;
+}
+
+.options-container input {
+  display: none;
+}
+
+
+.options-container .option-title {
+  cursor: pointer;
+
+  border-radius: 999px;
+
+
+  text-align: center;
+  min-width: 110px;
+  transition: all 0.2s ease;
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+
+
+.cooking-time-container{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+
+.green-central-box{
+
+    padding-top: 32px;
+    padding-right: 24px;
+    padding-bottom: 32px;
+    padding-left: 24px;
+    background-color: rgba(57, 96, 57, 0.2);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px
+}
+
+.central-box{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.options-container input{
+      display: none;
+}
+
+
+
+// .options-container input:checked + label {
+//   background: none;
+// }
+.option-title-style{
+    background-color:rgba(250, 240, 230, 1);;
+}
+
+
+
+
+.options-container input:checked + label .option-title-style {
+background-color: rgba(57, 96, 57, 0.2);
+  border-radius: 999px;
+ 
+}
+
+
+.option-title-style{
+    border-radius:30px;
+    padding-top: 6px;
+    padding-right: 12px;
+    padding-bottom: 6px;
+    padding-left: 12px;
+}
+
+
+.option-title-style:hover {
+background-color: rgba(250, 224, 198, 1);
+}
+
+.flex-start{display: flex;
+align-items: flex-start;
 }
