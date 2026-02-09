@@ -6,13 +6,14 @@ import { CookbookCountryBoxComponent } from './cookbook-country-box/cookbook-cou
 import { CountryPageComponent } from './country-page/country-page.component';
 import { CookbookComponent } from './cookbook/cookbook.component';
 import { ChoosePreferencePageComponent } from './choose-preference-page/choose-preference-page.component';
+import { RecipeResultsPageComponent } from './recipe-results-page/recipe-results-page.component';
 
 export const routes: Routes = [
 
     {path:'lala', component:LandingPageComponent},
     {path: 'recipeGenerator', component: GenerateRecipePageComponent},
      {path: 'cookbook', component: CookbookComponent},
-       {path: '', component: ChoosePreferencePageComponent} //for testing
+       {path: '', component: RecipeResultsPageComponent} //for testing
 
 
 
