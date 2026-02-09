@@ -156,6 +156,12 @@
   gap: 24px;
 }
 
+.diet-preferences-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
 .green-central-box {
   padding-top: 32px;
   padding-right: 24px;

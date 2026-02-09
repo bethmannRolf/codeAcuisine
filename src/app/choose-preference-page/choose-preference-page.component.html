@@ -12,120 +12,127 @@
         <div class="choose-preferences-heading-conntainer">
             <span class="choose-preference-heading">Choose your preferences</span>
         </div>
-<div class="central-box">
-        <div class="content-over-box">
+        <div class="central-box">
+            <div class="content-over-box">
 
-            <div class="left-side">
-                <span class="portions-cooking-style">How many portions you need?</span>
-                <div class="portion-choosing-line">
-                    <img class="minus button-image button-preference-cook-choosing"
-                        src="/assets/minusAndFrameGreen.svg">
-                    <span
-                        class="portions-number portions-people-number">1</span><!--just a random number as current placeholder-->
-                    <span class="portion-span">Portions</span>
-                    <img class="add-button-image button-preference-cook-choosing" src="/assets/plusAndFrameGreen.svg">
+                <div class="left-side">
+                    <span class="portions-cooking-style">How many portions you need?</span>
+                    <div class="portion-choosing-line">
+                        <img class="minus button-image button-preference-cook-choosing"
+                            src="/assets/minusAndFrameGreen.svg">
+                        <span
+                            class="portions-number portions-people-number">1</span><!--just a random number as current placeholder-->
+                        <span class="portion-span">Portions</span>
+                        <img class="add-button-image button-preference-cook-choosing"
+                            src="/assets/plusAndFrameGreen.svg">
+                    </div>
+                </div>
+                <div class="right-side">
+                    <span class="how-many-span">How many are cooking</span>
+                    <div class="add-person-line">
+                        <img class="minus button-image button-preference-cook-choosing"
+                            src="/assets/minusAndFrameGreen.svg">
+                        <span
+                            class="people-number portions-people-number">1</span><!--just a random number as current placeholder-->
+                        <span class="portion-span">People</span>
+                        <img class="add-button-image button-preference-cook-choosing"
+                            src="/assets/minusAndFrameGreen.svg">
+                    </div>
                 </div>
             </div>
-            <div class="right-side">
-                <span class="how-many-span">How many are cooking</span>
-                <div class="add-person-line">
-                    <img class="minus button-image button-preference-cook-choosing"
-                        src="/assets/minusAndFrameGreen.svg">
-                    <span
-                        class="people-number portions-people-number">1</span><!--just a random number as current placeholder-->
-                    <span class="portion-span">People</span>
-                    <img class="add-button-image button-preference-cook-choosing" src="/assets/minusAndFrameGreen.svg">
+            <div class="green-central-box">
+                <div class="cooking-time-container">
+                    <div class="category-heading-container">
+                        <img src="/assets/clockGreen.svg">
+                        <span class="preference-category-heading">Cooking time:</span>
+                    </div>
+                    <div class="options-container">
+                        <input type="radio" id="quick" name="cookingTime" value="quick">
+                        <label class="flex-col flex-start" for="quick">
+                            <span class="option-title-style">Quick</span>
+                            <span class="option-description-title">up to 20 min</span>
+                        </label>
+                        <input type="radio" id="medium" name="cookingTime" value="medium">
+                        <label class="flex-col" for="medium">
+                            <span class="option-title-style">Medium</span>
+                            <span class="option-description-title">25-40 min</span>
+                        </label>
+                        <input type="radio" id="complex" name="cookingTime" value="complex">
+                        <label class="flex-col" for="complex">
+                            <span class="option-title-style">Complex</span>
+                            <span class="option-description-title">over 45 min</span>
+                        </label>
+                    </div>
                 </div>
+
+                <div class="cuisine-box">
+                    <div class="category-heading-container">
+                        <img src="/assets/worldGreen.svg">
+                        <span class="preference-category-heading">Cuisine</span>
+                    </div>
+                    <div class="options-container">
+                        <input type="radio" id="german" name="cuisine" value="german">
+                        <label for="german">
+                            <span class="option-title-style">German</span>
+                        </label>
+                        <input type="radio" id="italian" name="cuisine" value="italian">
+                        <label for="italian">
+                            <span class="option-title-style">Italian</span>
+                        </label>
+                        <input type="radio" id="indian" name="cuisine" value="indian">
+                        <label for="indian">
+                            <span class="option-title-style">Indian</span>
+                        </label>
+                        <input type="radio" id="japanese" name="cuisine" value="japanese">
+                        <label for="japanese">
+                            <span class="option-title-style">Japanese</span>
+                        </label>
+                        <input type="radio" id="gourmet" name="cuisine" value="gourmet">
+                        <label for="gourmet">
+                            <span class="option-title-style">Gourmet</span>
+                        </label>
+                        <input type="radio" id="fusion" name="cuisine" value="fusion">
+                        <label for="fusion">
+                            <span class="option-title-style">Fusion</span>
+                        </label>
+                    </div>
+
+                </div>
+
+
+
+                <!--  -->
+                <div class="diet-preferences-container">
+                    <div class="category-heading-container">
+                        <img src="/assets/cutleryGreen.svg">
+                        <span class="preference-category-heading">Cooking time:</span>
+                    </div>
+                    <div class="options-container">
+                        <input type="radio" id="vegetarian" name="diet" value="vegetarian">
+                        <label for="vegetarian">
+                            <span class="option-title-style">Vegetarian</span>
+
+                        </label>
+                        <input type="radio" id="vegan" name="diet" value="vegan">
+                        <label for="vegan">
+                            <span class="option-title-style">Vegan</span>
+
+                        </label>
+                        <input type="radio" id="keto" name="diet" value="keto">
+                        <label for="keto">
+                            <span class="option-title-style">Keto</span>
+
+                        </label>
+                        <input type="radio" id="no-preferences" name="diet" value="no-prefernces">
+                        <label for="no-preferences">
+                            <span class="option-title-style">No preferences</span>
+
+                        </label>
+                    </div>
+                </div>
+
+
             </div>
-        </div>
-        <div class="green-central-box">
-            <div class="cooking-time-container">
-                <div class="category-heading-container">
-                    <img src="/assets/clockGreen.svg">
-                    <span class="preference-category-heading">Cooking time:</span>
-                </div>
-                <div class="options-container">
-                    <input type="radio" id="quick" name="cookingTime" value="quick">
-                    <label class="flex-col flex-start" for="quick">
-                        <span class="option-title-style">Quick</span>
-                        <span class="option-description-title">up to 20 min</span>
-                    </label>
-                    <input type="radio" id="medium" name="cookingTime" value="medium">
-                    <label class="flex-col" for="medium">
-                        <span class="option-title-style">Medium</span>
-                        <span class="option-description-title">25-40 min</span>
-                    </label>
-                    <input type="radio" id="complex" name="cookingTime" value="complex">
-                    <label class="flex-col" for="complex">
-                        <span class="option-title-style">Complex</span>
-                        <span class="option-description-title">over 45 min</span>
-                    </label>
-                </div>
-            </div>
-
-            <div class="cuisine-box">
-                <div class="category-heading-container">
-                    <img src="/assets/worldGreen.svg">
-                    <span class="preference-category-heading">Cuisine</span>
-                </div>
-                <div class="options-container">
-                    <input type="radio" id="german" name="cuisine" value="german">
-                    <label for="german">
-                        <span class="option-title-style">German</span>
-                    </label>
-                    <input type="radio" id="italian" name="cuisine" value="italian">
-                    <label for="italian">
-                        <span class="option-title-style">Italian</span>
-                    </label>
-                    <input type="radio" id="indian" name="cuisine" value="indian">
-                    <label for="indian">
-                        <span class="option-title-style">Indian</span>
-                    </label>
-                    <input type="radio" id="japanese" name="cuisine" value="japanese">
-                    <label for="japanese">
-                        <span class="option-title-style">Japanese</span>
-                    </label>
-                    <input type="radio" id="gourmet" name="cuisine" value="gourmet">
-                    <label for="gourmet">
-                        <span class="option-title-style">Gourmet</span>
-                    </label>
-                    <input type="radio" id="fusion" name="cuisine" value="fusion">
-                    <label for="fusion">
-                        <span class="option-title-style">Fusion</span>
-                    </label>
-                </div>
-
-            </div>
-
-
-
-            <!--  -->
-            <div class="diet-preferences-container">
-                <div class="category-heading-container">
-                    <img src="/assets/clockGreen.svg">
-                    <span class="preference-category-heading">Cooking time:</span>
-                </div>
-                <div class="cooking-options">
-                    <input type="radio" id="quick" name="cookingTime" value="quick">
-                    <label for="quick">
-                        <span class="cooking-option-style">Quick</span>
-                        <span class="cooking-time-style">up to 20 min</span>
-                    </label>
-                    <input type="radio" id="medium" name="cookingTime" value="medium">
-                    <label for="medium">
-                        <span class="cooking-option-style">Medium</span>
-                        <span class="cooking-time-style">25-40 min</span>
-                    </label>
-                    <input type="radio" id="complex" name="cookingTime" value="complex">
-                    <label for="complex">
-                        <span class="cooking-option-style">Complex</span>
-                        <span class="cooking-time-style">over 45 min</span>
-                    </label>
-                </div>
-            </div>
-
-
-        </div>
         </div>
         <div class="button-adjustment-div">
             <button class="generate-recipe-button"><span>Generate a recipe</span></button>
