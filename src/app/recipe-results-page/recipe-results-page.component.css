@@ -6,4 +6,161 @@
   padding-left: 65px;
   padding-right: 40px;
   padding-top: 40px;
+  gap: 64px;
+}
+
+.upper-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-upper-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.image-recipe-results {
+  border-radius: 20px;
+}
+
+.results-heading {
+  color: linen;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 65px;
+  letter-spacing: 0%;
+}
+
+.description-text {
+  color: linen;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.tags {
+  display: flex;
+  gap: 10px;
+}
+
+.dummy-tag {
+  color: #1e5515;
+  background-color: linen;
+  padding-top: 6px;
+  padding-right: 12px;
+  padding-bottom: 6px;
+  padding-left: 12px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.gen-recipe-span {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #1e5515;
+}
+
+.container-below {
+  display: flex;
+  gap: 24px;
+}
+
+.gen-recipe {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.recipe-heading {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #10310b;
+}
+
+.cooking-time-container {
+  display: flex;
+  gap: 4px;
+}
+
+.service-plate {
+  width: 40px;
+  height: 28px;
+}
+
+.clock-image {
+  width: 24px;
+  height: 24px;
+}
+
+.cooking-time-span {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #396039;
+}
+
+.container {
+  background-color: #dbe0db;
+  padding-top: 32px;
+  padding-right: 24px;
+  padding-bottom: 32px;
+  padding-left: 24px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.upper-container-part {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.view-button-span {
+  padding-top: 16px;
+  padding-right: 26px;
+  padding-bottom: 16px;
+  padding-left: 26px;
+  background-color: linen;
+  color: green;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.view-button-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.generate-recipe-button {
+  border: none;
+  background-color: transparent;
+  display: flex;
+}
+
+.generate-recipe-span {
+  color: linen;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0%;
 }

@@ -1,16 +1,211 @@
-
 .recipe-results-container {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
   background-color: #10310B;
   height: 100dvh;
   padding-left: 65px;
   padding-right: 40px;
   padding-top: 40px;
-  
+  gap: 64px;
+
+
 }
 
-    
+
+.upper-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-upper-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+
+}
+
+.right-upper-container {}
+
+.image-recipe-results {
+
+
+  border-radius: 20px;
+}
+
+.results-heading {
+  //font quicksand
+  color: rgba(250, 240, 230, 1);
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 65px;
+  letter-spacing: 0%;
+
+}
+
+.description-text {
+  // font quicksand
+  color: rgba(250, 240, 230, 1);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0%;
+
+}
+
+.tags {
+  display: flex;
+  gap: 10px;
+
+}
+
+.dummy-tag {
+
+  //font quicksand
+  color: rgba(30, 85, 21, 1);
+  background-color: rgba(250, 240, 230, 1);
+  padding-top: 6px;
+  padding-right: 12px;
+  padding-bottom: 6px;
+  padding-left: 12px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0%;
+
+
+}
+
+
+.gen-recipe-span {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: rgba(30, 85, 21, 1);
+
+}
+
+
+.container-below {
+  display: flex;
+  gap: 24px;
+
+}
+
+.gen-recipe {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+}
+
+.recipe-heading{
+    font-size: 32px;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: rgba(16, 49, 11, 1);
+}
+
+.cooking-time-container {
+  display: flex;
+  gap: 4px;
+}
+
+.service-plate{
+    width: 40px;
+  height: 28px;
+}
+
+.clock-image {
+  width: 24px;
+  height: 24px;
+}
+
+.cooking-time-span {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: rgba(57, 96, 57, 1);
+}
 
 
 
+
+// part for dummy container
+
+.container {
+
+  background-color: rgba(219, 224, 219, 1);
+  padding-top: 32px;
+  padding-right: 24px;
+  padding-bottom: 32px;
+  padding-left: 24px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+
+}
+
+.upper-container-part {
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+
+.view-button-span {
+
+  padding-top: 16px;
+  padding-right: 26px;
+  padding-bottom: 16px;
+  padding-left: 26px;
+  background-color: rgba(250, 240, 230, 1);
+  color: rgba(0, 128, 0, 1);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: 0%;
+
+
+}
+
+.view-button-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+// end
+
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.generate-recipe-button {
+
+  border: none;
+  background-color: transparent;
+  display: flex;
+
+
+
+}
+
+.generate-recipe-span {
+  color: rgba(250, 240, 230, 1);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0%;
+
+
+}
