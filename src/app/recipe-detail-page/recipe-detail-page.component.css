@@ -1,0 +1,34 @@
+.recipe-details-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.generate-recipe-button {
+  border: none;
+  background-color: transparent;
+  display: flex;
+  padding-top: 16px;
+  padding-right: 96px;
+  padding-bottom: 16px;
+  padding-left: 26px;
+  border-radius: 5px;
+  gap: 10px;
+}
+
+.generate-recipe-span {
+  color: #396039;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0%;
+}
+
+.recipe-results-button {
+  background-color: transparent;
+  border: none;
+}
