@@ -73,6 +73,7 @@
 .recipe-info-container-top {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 24px;
     border-radius: 20px;
     background-color: rgba(250, 240, 230, 1);
@@ -80,6 +81,11 @@
 
 }
 
+.cooking-clock-container{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
 
 
 
@@ -108,12 +114,37 @@
     letter-spacing: 0%;
 }
 
-
-.fav-image{
-    width: 20;
-    height: 20;
+.recipe-info-container-top-right{
+    display: flex;
+    flex-direction: column;
+    gap:24px;
 }
 
+
+.nutrition-and-description-container{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-left: 8px;
+}
+
+.nutrition-information-container{
+    display: flex ;
+    flex-direction: row;
+    gap: 24px;
+    
+}
+
+.fav-image{
+    width: 20px;
+    height: 20px;
+}
+
+.nutrition-container{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
 
 
 .nut-info-span{
@@ -129,7 +160,14 @@
     height: 20px;
 }
 
-.cooking-time-span {}
+.cooking-time-span {
+    //font quicksand
+        font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0%;
+    color: rgba(57, 96, 57, 1);
+}
 
 
 .container-cooking-persons {
