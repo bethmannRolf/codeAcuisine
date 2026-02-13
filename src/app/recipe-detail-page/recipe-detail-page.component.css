@@ -160,6 +160,44 @@
   display: flex;
 }
 
+.recipe-banner {
+  max-width: 1152px;
+}
+
+.recipe-banner-div {
+  display: flex;
+  justify-content: center;
+}
+
+.your-ingredients-title-span {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  font-weight: 600;
+  color: green;
+}
+
+.extra-ingredients-title-span {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  font-weight: 600;
+  color: green;
+}
+
+.recipe-info-container-below {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-below-ingredients-banner {
+  display: flex;
+  gap: 80px;
+  justify-content: center;
+}
+
 .recipe-title-span {
   color: #1e5515;
   font-size: 54px;

@@ -81,7 +81,7 @@
 
 }
 
-.cooking-clock-container{
+.cooking-clock-container {
     display: flex;
     align-items: center;
     gap: 4px;
@@ -97,7 +97,7 @@
     // height: 100%;
 }
 
-.category-span{
+.category-span {
     // font quicksand
     font-size: 18px;
     font-weight: 500;
@@ -106,7 +106,7 @@
 }
 
 
-.category-span{
+.category-span {
     // font quicksand
     font-size: 16px;
     font-weight: 500;
@@ -114,40 +114,40 @@
     letter-spacing: 0%;
 }
 
-.recipe-info-container-top-right{
+.recipe-info-container-top-right {
     display: flex;
     flex-direction: column;
-    gap:24px;
+    gap: 24px;
 }
 
 
-.nutrition-and-description-container{
+.nutrition-and-description-container {
     display: flex;
     flex-direction: column;
     gap: 8px;
     padding-left: 8px;
 }
 
-.nutrition-information-container{
-    display: flex ;
+.nutrition-information-container {
+    display: flex;
     flex-direction: row;
     gap: 24px;
-    
+
 }
 
-.fav-image{
+.fav-image {
     width: 20px;
     height: 20px;
 }
 
-.nutrition-container{
+.nutrition-container {
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
 
 
-.nut-info-span{
+.nut-info-span {
     // font quicksand
     font-size: 18px;
     font-weight: 500;
@@ -162,7 +162,7 @@
 
 .cooking-time-span {
     //font quicksand
-        font-size: 20px;
+    font-size: 20px;
     font-weight: 500;
     line-height: 20px;
     letter-spacing: 0%;
@@ -171,10 +171,10 @@
 
 
 .container-cooking-persons {
-display: flex;
-align-items: center;
-justify-content: flex-start;
-gap: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
 
 
 }
@@ -195,30 +195,88 @@ gap: 16px;
 
 }
 
+.recipe-banner {
+
+    max-width: 1152px;
+
+}
+
+
+.recipe-banner-div {
+    display: flex;
+    justify-content: center;
+}
+
+.your-ingredients-container {
+    
+}
 
 
 
-.cooking-time-clock {}
+
+.your-ingredients-title-span {
+    // font quicksand
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    font-weight: 600;
+    color: rgba(0, 128, 0, 1);
+
+}
+
+.extra-ingredients-title-span {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    font-weight: 600;
+     color: rgba(0, 128, 0, 1);
+}
+
+.recipe-info-container-below{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.your-ingredients-container{
+
+}
+
+.container-below-ingredients-banner{
+    display: flex;
+        gap: 80px;
+        justify-content: center;
+}
+
+.extra-ingredients-container{
+
+}
+
+
+
+.your-ingredients-title-span .cooking-time-clock {}
 
 .cooking-time-span {}
 
 .recipe-title-span {
 
-color: rgba(30, 85, 21, 1);
-font-size: 54px;
-font-weight: 600;
-line-height: 65px;
-letter-spacing: 0%;
+    color: rgba(30, 85, 21, 1);
+    font-size: 54px;
+    font-weight: 600;
+    line-height: 65px;
+    letter-spacing: 0%;
 
 }
 
-.top-right-first-line-dummy{
+.top-right-first-line-dummy {
     display: flex;
-gap:16px;
-justify-content: flex-start;
+    gap: 16px;
+    justify-content: flex-start;
 }
 
-.menu-category{
+.menu-category {
     padding-top: 6px;
     padding-right: 12px;
     padding-bottom: 6px;
@@ -228,7 +286,7 @@ justify-content: flex-start;
 
 }
 
-.fav-category{
+.fav-category {
     display: flex;
 
 }
