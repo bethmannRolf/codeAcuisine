@@ -58,7 +58,7 @@
 .recipe-info-container {
     display: flex;
     flex-direction: column;
-
+    gap: 48px;
     padding-top: 40px;
     padding-right: 48px;
     padding-bottom: 40px;
@@ -207,9 +207,7 @@
     justify-content: center;
 }
 
-.your-ingredients-container {
-    
-}
+.your-ingredients-container {}
 
 
 
@@ -231,26 +229,59 @@
     line-height: 100%;
     letter-spacing: 0%;
     font-weight: 600;
-     color: rgba(0, 128, 0, 1);
+    color: rgba(0, 128, 0, 1);
 }
 
-.recipe-info-container-below{
+.recipe-info-container-below {
     display: flex;
     flex-direction: column;
 
 }
 
-.your-ingredients-container{
+.your-ingredients-container {}
 
-}
-
-.container-below-ingredients-banner{
+.container-below-ingredients-banner {
     display: flex;
-        gap: 80px;
-        justify-content: center;
+    gap: 80px;
+    justify-content: center;
 }
 
-.extra-ingredients-container{
+.extra-ingredients-container {}
+
+.feedback-container {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+
+}
+
+
+.find-inspiration-span {
+    //font mulish
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 100%;
+    line-height: 0%;
+    color: rgba(16, 49, 11, 1);
+}
+
+.give-heart-span {
+    //font mulish
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: rgba(16, 49, 11, 1);
+}
+
+
+.like-heart-large {
+    padding-top: 7px;
+    padding-right: 6px;
+    padding-bottom: 7px;
+    padding-left: 6px;
+    border-radius: 5px;
+    
 
 }
 

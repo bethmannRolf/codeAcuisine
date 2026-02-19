@@ -44,6 +44,7 @@
 .recipe-info-container {
   display: flex;
   flex-direction: column;
+  gap: 48px;
   padding-top: 40px;
   padding-right: 48px;
   padding-bottom: 40px;
@@ -196,6 +197,36 @@
   display: flex;
   gap: 80px;
   justify-content: center;
+}
+
+.feedback-container {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.find-inspiration-span {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 100%;
+  line-height: 0%;
+  color: #10310b;
+}
+
+.give-heart-span {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #10310b;
+}
+
+.like-heart-large {
+  padding-top: 7px;
+  padding-right: 6px;
+  padding-bottom: 7px;
+  padding-left: 6px;
+  border-radius: 5px;
 }
 
 .recipe-title-span {
