@@ -281,10 +281,14 @@
     padding-bottom: 7px;
     padding-left: 6px;
     border-radius: 5px;
-    
-
 }
 
+
+.cooking-steps-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
 
 
 .your-ingredients-title-span .cooking-time-clock {}

@@ -229,6 +229,12 @@
   border-radius: 5px;
 }
 
+.cooking-steps-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
 .recipe-title-span {
   color: #1e5515;
   font-size: 54px;
