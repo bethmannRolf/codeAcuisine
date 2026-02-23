@@ -271,10 +271,29 @@
 }
 
 .cooking-step-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  background-color: #ffd9b3;
+  padding-top: 2px;
+  padding-right: 4px;
+  padding-bottom: 2px;
+  padding-left: 4px;
+  border-radius: 6px;
+}
+
+.cook-symbol {
+  width: 2ppx;
+  height: 22px;
+}
+
+.cook-number {
   font-weight: 500;
   font-size: 18px;
-  letter-spacing: 100%;
-  line-height: 0%;
+  letter-spacing: 0%;
+  line-height: 100%;
+  color: #10310b;
 }
 
 .cookingstep {

@@ -247,9 +247,7 @@
     justify-content: center;
 }
 
-.extra-ingredients-container {
-
-}
+.extra-ingredients-container {}
 
 .feedback-container {
     display: flex;
@@ -295,18 +293,18 @@
     display: flex;
     max-width: 864px;
     justify-content: center;
-     margin: 0 auto; 
+    margin: 0 auto;
     flex-wrap: wrap;
     gap: 40px;
 
 }
 
-.cooking-step-left{
+.cooking-step-left {
     display: flex;
     gap: 8px;
 }
 
-.cooking-step-number{
+.cooking-step-number {
     //font quicksand
     font-size: 18px;
     font-weight: 500;
@@ -318,14 +316,14 @@
     padding-right: 3px;
     padding-bottom: 10px;
     padding-left: 3px;
-width: 32px;
-height: 32px;
-display: flex;
-justify-content: center;
-align-items: center;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.cooking-step-heading{
+.cooking-step-heading {
     //font quicksand
     font-weight: 500;
     font-size: 24px;
@@ -334,26 +332,50 @@ align-items: center;
     color: rgba(16, 49, 11, 1);
 }
 
-.cooking-step-right{
-//font quicksand
-font-weight: 500;
-font-size: 18px;
-letter-spacing: 100%;
-line-height: 0%;
-}
-
-
-
-
-
-
-.cookingstep{
+.cooking-step-right {
+    //font quicksand
     display: flex;
-   align-items: center;
-  justify-content: space-between;
+    justify-content: center;
+   
+    align-items: center;
+ 
+gap: 6px;
+    background-color: rgba(255, 217, 179, 1);
+    padding-top: 2px;
+    padding-right: 4px;
+    padding-bottom: 2px;
+    padding-left: 4px;
+    border-radius: 6px;
+    
 }
 
-.cooking-step-box{
+.cook-symbol{
+    width: 2ppx;
+    height: 22px;
+}
+
+.cook-number {
+    //font quicksand
+
+
+    font-weight: 500;
+
+    font-size: 18px;
+    letter-spacing: 0%;
+    line-height: 100%;
+    color: rgba(16, 49, 11, 1);
+}
+
+
+
+
+.cookingstep {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cooking-step-box {
     display: flex;
     flex-direction: column;
     gap: 32px;
