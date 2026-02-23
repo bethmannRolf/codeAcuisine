@@ -7,7 +7,6 @@
 
 
 
-
 .button-container {
     display: flex;
     justify-content: flex-end;
@@ -44,8 +43,21 @@
 }
 
 .recipe-results-button {
+    display: flex;
+    gap:10px;
     background-color: transparent;
     border: none;
+    padding-bottom: 64px;
+    padding-left: 64px;
+}
+
+.back-to-recipes-span{
+    //font quicksand
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0%;
+    line-height: 10px;
+    color: rgba(30, 85, 21, 1);
 }
 
 
@@ -554,4 +566,9 @@ gap: 6px;
     font-weight: 600;
     line-height: 100%;
     letter-spacing: 0%;
+}
+
+.recipe-detail-page{
+    display: flex;;
+    
 }
