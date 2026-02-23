@@ -106,6 +106,7 @@
 .nutrition-information-container {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   gap: 24px;
 }
 
@@ -125,6 +126,44 @@
   font-weight: 500;
   line-height: 100%;
   letter-spacing: 0%;
+  color: #10310b;
+}
+
+.nut-category-heading {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #10310b;
+}
+
+.nut-amount {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0%;
+  color: #10310b;
+}
+
+.ingredients {
+  display: flex;
+  flex-direction: column;
+  margin-top: 54px;
+  gap: 16px;
+  font-weight: 500;
+  font-size: 24px;
+  letter-spacing: 0%;
+  line-height: 100%;
+  color: #10310b;
+}
+
+.row {
+  display: flex;
+  gap: 40px;
+}
+
+.amount {
+  min-width: 80px;
 }
 
 .cooking-time-clock {
@@ -196,6 +235,12 @@
   justify-content: center;
 }
 
+.your-ingredients-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
 .your-ingredients-title-span {
   font-weight: 600;
   font-size: 24px;
@@ -203,6 +248,10 @@
   letter-spacing: 0%;
   font-weight: 600;
   color: green;
+}
+
+.list-container {
+  padding-left: 40px;
 }
 
 .extra-ingredients-title-span {
