@@ -191,6 +191,7 @@
 .recipe-info-container-below {
   display: flex;
   flex-direction: column;
+  gap: 24px;
 }
 
 .container-below-ingredients-banner {
@@ -206,10 +207,10 @@
 }
 
 .find-inspiration-span {
-  font-size: 20px;
-  font-weight: 700;
-  letter-spacing: 100%;
-  line-height: 0%;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 0%;
+  line-height: 100%;
   color: #10310b;
 }
 
@@ -231,8 +232,63 @@
 
 .cooking-steps-container {
   display: flex;
+  max-width: 864px;
+  justify-content: center;
+  margin: 0 auto;
   flex-wrap: wrap;
   gap: 40px;
+}
+
+.cooking-step-left {
+  display: flex;
+  gap: 8px;
+}
+
+.cooking-step-number {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0%;
+  background-color: linen;
+  border-radius: 31.5px;
+  padding-top: 10px;
+  padding-right: 3px;
+  padding-bottom: 10px;
+  padding-left: 3px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cooking-step-heading {
+  font-weight: 500;
+  font-size: 24px;
+  letter-spacing: 0%;
+  line-height: 100%;
+  color: #10310b;
+}
+
+.cooking-step-right {
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 100%;
+  line-height: 0%;
+}
+
+.cookingstep {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cooking-step-box {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  flex: 0 0 calc(50% - 20px);
+  box-sizing: border-box;
 }
 
 .recipe-title-span {
