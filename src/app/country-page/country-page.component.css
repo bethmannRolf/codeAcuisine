@@ -1,0 +1,28 @@
+.recipe-results-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: transparent;
+  border: none;
+  padding-bottom: 64px;
+  padding-left: 64px;
+}
+
+.back-to-recipes-span {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0%;
+  line-height: 10px;
+  color: #1e5515;
+}
+
+.country-page-content {
+  display: flex;
+  gap: 40px;
+}
+
+.generate-recipe-button {
+  border: none;
+  background-color: #396039;
+  color: linen;
+}

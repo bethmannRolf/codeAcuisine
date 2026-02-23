@@ -1,0 +1,31 @@
+.recipe-results-button {
+    display: flex;
+    align-items: center;
+    gap:10px;
+    background-color: transparent;
+    border: none;
+    padding-bottom: 64px;
+    padding-left: 64px;
+}
+
+.back-to-recipes-span{
+    //font quicksand
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0%;
+    line-height: 10px;
+    color: rgba(30, 85, 21, 1);
+}
+
+
+.country-page-content{
+    display: flex;
+    gap: 40px;
+}
+
+.generate-recipe-button{
+    //font quicksand
+    border: none;
+    background-color: rgba(57, 96, 57, 1);
+    color: rgba(250, 240, 230, 1);
+}

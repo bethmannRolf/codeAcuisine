@@ -32,6 +32,7 @@
 
 .recipe-results-button {
   display: flex;
+  align-items: center;
   gap: 10px;
   background-color: transparent;
   border: none;
