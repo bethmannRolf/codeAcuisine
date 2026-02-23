@@ -175,9 +175,27 @@
     align-items: center;
     justify-content: flex-start;
     gap: 16px;
-
-
 }
+
+.cooking-person-span{
+//font quicksand
+font-weight: 500;
+font-size: 20px;
+line-height: 20px;
+letter-spacing: 0%;
+}
+
+.cook-dummy-container{
+    display: flex;
+    align-items: center;
+
+    padding-top: 2px;
+    padding-right: 4px;
+    padding-bottom: 2px;
+    padding-left: 4px;
+    gap: 6px;
+}
+
 
 .cook-dummy-image-one {
     width: 27.5px;
@@ -192,6 +210,7 @@
 
 .cooks-container {
     display: flex;
+    gap:16px;
 
 }
 
@@ -201,6 +220,14 @@
 
 }
 
+.cooks-dummy-span{
+    //font quicksand
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0%;
+    line-height: 100%;
+    color: rgba(16, 49, 11, 1);
+}
 
 .recipe-banner-div {
     display: flex;
@@ -302,6 +329,7 @@
 .cooking-step-left {
     display: flex;
     gap: 8px;
+    align-items: center;
 }
 
 .cooking-step-number {
