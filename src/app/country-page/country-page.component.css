@@ -54,3 +54,9 @@
 .cuisine-banner {
   max-width: 1143px;
 }
+
+.main-part {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
