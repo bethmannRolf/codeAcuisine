@@ -1,14 +1,14 @@
 .recipe-results-button {
     display: flex;
     align-items: center;
-    gap:10px;
+    gap: 10px;
     background-color: transparent;
     border: none;
     padding-bottom: 64px;
     padding-left: 64px;
 }
 
-.back-to-recipes-span{
+.back-to-recipes-span {
     //font quicksand
     font-weight: 500;
     font-size: 14px;
@@ -18,13 +18,13 @@
 }
 
 
-.country-page-content{
+.country-page-content {
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 
-.generate-recipe-button{
+.generate-recipe-button {
     //font quicksand
     font-size: 24px;
     font-weight: 600;
@@ -39,7 +39,7 @@
     padding-left: 26px;
 }
 
-.generate-button-container{
+.generate-button-container {
     width: 100%;
     display: flex;
     justify-content: flex-end;
@@ -47,7 +47,7 @@
 
 }
 
-.main-content{
+.main-content {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,7 +55,7 @@
     gap: 64px;
 }
 
-.cuisine-banner{
+.cuisine-banner {
     max-width: 1143px;
 }
 
