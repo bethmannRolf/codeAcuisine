@@ -18,11 +18,39 @@
 
 .country-page-content {
   display: flex;
+  flex-direction: column;
   gap: 40px;
 }
 
 .generate-recipe-button {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: 0%;
   border: none;
   background-color: #396039;
   color: linen;
+  padding-top: 16px;
+  padding-right: 26px;
+  padding-bottom: 16px;
+  padding-left: 26px;
+}
+
+.generate-button-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 146px;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.cuisine-banner {
+  max-width: 1143px;
 }
