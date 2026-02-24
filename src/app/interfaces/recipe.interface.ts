@@ -4,6 +4,7 @@ export interface Recipe {
   title: string;
   description: string;
   ingredients: Ingredient[];
+  diet: string;
   nutritions: Nutrition[];
   steps: string[];
   country:string;

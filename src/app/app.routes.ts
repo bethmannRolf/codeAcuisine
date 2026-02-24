@@ -12,10 +12,10 @@ import { RecipeDetailPageComponent } from './recipe-detail-page/recipe-detail-pa
 export const routes: Routes = [
 
   { path: 'lala', component: LandingPageComponent },
-  { path: 'recipeGenerator', component: GenerateRecipePageComponent },
+  { path: '', component: GenerateRecipePageComponent },
   { path: 'cookbook', component: CookbookComponent },
   { path: 'recipedetail', component: RecipeDetailPageComponent },
-  { path: '', component: CountryPageComponent }
+  { path: 'gdf', component: CountryPageComponent }
 
   //for testing
 
