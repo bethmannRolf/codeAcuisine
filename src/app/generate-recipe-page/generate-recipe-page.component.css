@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .generate-recipe-box {
   display: flex;
   align-items: center;
@@ -154,4 +155,61 @@
   letter-spacing: 0%;
   line-height: 100%;
   display: none;
+}
+
+.ingredient-element-container-right {
+  display: flex;
+  justify-content: space-between;
+}
+
+.delete-add-button {
+  width: 19px;
+  height: 19px;
+}
+
+.delete-add-button:hover {
+  cursor: pointer;
+}
+
+.delete-add-container {
+  display: flex;
+  gap: 16px;
+}
+
+.ingredients-list {
+  list-style: none;
+  padding: 0;
+}
+
+.ingredients-list li {
+  border-radius: 8px;
+}
+
+.ingredients-list li:hover {
+  background-color: linen;
+}
+
+.ingredients-list li {
+  position: relative;
+  padding-left: 22px;
+  padding-top: 2px;
+  padding-right: 4px;
+  padding-bottom: 2px;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.ingredients-list li::before {
+  content: "•";
+  position: absolute;
+  left: 5px;
+  color: darkgreen;
+}
+
+.ingredients-list li:hover {
+  background-color: linen;
+}
+
+.output-ingredients-style {
+  color: black;
 }

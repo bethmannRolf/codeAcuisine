@@ -14,16 +14,36 @@ import { FormsModule } from '@angular/forms';
 export class GenerateRecipePageComponent {
 
 
-  inputValue: string = '';
-  items: string[] = [];
+  inputIngredient: string = '';
+  inputAmount: string ='';
+  inputUnit: string = 'gram';
+  items: {name: string; amount: string; unit: string
 
-  addItem() {
-    if (this.inputValue.trim()) {
-      this.items.push(this.inputValue);
-      this.inputValue = ''; 
-    }
+
+  } [] = [];
+
+addItem() {
+  if (
+    this.inputIngredient.trim() &&
+    this.inputAmount.trim() &&
+    this.inputUnit.trim()
+  ) {
+    this.items.push({
+      name: this.inputIngredient,
+      amount: this.inputAmount,
+      unit: this.inputUnit
+    });
+
+    this.inputIngredient = '';
+    this.inputAmount = '';
+    this.inputUnit = 'gram'; // optional zurücksetzen
   }
+}
 
+
+deleteIngredient(index: number) {
+  this.items = this.items.filter((_, i) => i !== index);
+}    
 
 
 }

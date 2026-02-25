@@ -10,17 +10,20 @@
                 <div class="ingredients-left-side">
                     <div class="ingredients-input-left-side">
                         <span class="heading-ingredients-input-left-side">Ingredients</span>
-                        <input type="text" [(ngModel)]="inputValue" placeholder="Etwas eingeben..."
+                        <input type="text" [(ngModel)]="inputIngredient" placeholder="Etwas eingeben..."
                             class="ingredients-input-styling">
                     </div>
                     <div class="size-input-left-side">
                         <span class="serving-size-styling">Serving size</span>
                         <div class="size-input-second-line">
-                            <input placeholder="100" class="number-size-ingredients">
-                            <select class="drop-down-ingredients" id="fruits" name="fruits">
+                            <input [(ngModel)]="inputAmount" placeholder="100" class="number-size-ingredients">
+                            <select [(ngModel)]="inputUnit" class="drop-down-ingredients" id="ingredientAmount"
+                                name="ingredientAmount">
+
                                 <option value="gram">gram</option>
                                 <option value="ml">ml</option>
                                 <option value="test">test</option>
+
                             </select>
                             <img class="add-ingredient-button" (click)="addItem()" src="/assets/addImage.svg">
 
@@ -31,14 +34,27 @@
                 </div>
 
                 <div class="ingredients-output-list">
-                    <span class="ingredient-list-right-heading">List of your ingredient</span>
+                    <span class="ingredient-list-right-heading">
+                        List of your ingredient
+                    </span>
 
-                    @for (item of items; track $index) {
-                    <div>
-                        {{ item }}
-                    </div>
-                    }
+                    <ul class="ingredients-list">
+                        @for (item of items; track $index; let i = $index) {
+                        <li>
+                            <div class="ingredient-element-container-right">
+                                <div class="output-ingredients-style">
+                                    {{ item.amount }} {{ item.unit }} {{ item.name }}
+                                </div>
 
+
+                                <div class="delete-add-container">
+                                    <img class="delete-add-button" src="/assets/addingGenerateRecipe.svg">
+                                    <img class="delete-add-button" (click)="deleteIngredient(i)" src="/assets/deleteButton.svg">
+                                </div>
+                            </div>
+                        </li>
+                        }
+                    </ul>
                 </div>
 
             </div>
