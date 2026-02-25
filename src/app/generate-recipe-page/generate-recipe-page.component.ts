@@ -36,7 +36,7 @@ addItem() {
 
     this.inputIngredient = '';
     this.inputAmount = '';
-    this.inputUnit = 'gram'; // optional zurücksetzen
+    this.inputUnit = 'gram'; 
   }
 }
 
