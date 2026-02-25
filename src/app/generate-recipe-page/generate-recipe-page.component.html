@@ -16,13 +16,14 @@
                     <div class="size-input-left-side">
                         <span class="serving-size-styling">Serving size</span>
                         <div class="size-input-second-line">
-                            <input [(ngModel)]="inputAmount" placeholder="100" class="number-size-ingredients">
+                            <input type="number" min="0" [(ngModel)]="inputAmount" placeholder="100"
+                                class="number-size-ingredients">
                             <select [(ngModel)]="inputUnit" class="drop-down-ingredients" id="ingredientAmount"
                                 name="ingredientAmount">
 
                                 <option value="gram">gram</option>
                                 <option value="ml">ml</option>
-                                <option value="test">test</option>
+                                <option value="piece">test</option>
 
                             </select>
                             <img class="add-ingredient-button" (click)="addItem()" src="/assets/addImage.svg">
@@ -48,11 +49,29 @@
 
 
                                 <div class="delete-add-container">
-                                    <img class="delete-add-button" src="/assets/addingGenerateRecipe.svg">
-                                    <img class="delete-add-button" (click)="deleteIngredient(i)" src="/assets/deleteButton.svg">
+                                    <img class="delete-add-button" src="/assets/editGenerateRecipe.svg">
+                                    <img class="delete-add-button" (click)="deleteIngredient(i)"
+                                        src="/assets/deleteButton.svg">
                                 </div>
                             </div>
                         </li>
+
+                        <li>
+                            <div class="ingredient-edit">
+                                <input>
+                                <select [(ngModel)]="inputUnit" class="drop-down-ingredients" id="ingredientAmount"
+                                    name="ingredientAmount">
+
+                                    <option value="gram">gram</option>
+                                    <option value="ml">ml</option>
+                                    <option value="piece">test</option>
+
+                                </select>
+                                <input>
+                            </div>
+
+                        </li>
+
                         }
                     </ul>
                 </div>

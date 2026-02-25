@@ -15,35 +15,44 @@ export class GenerateRecipePageComponent {
 
 
   inputIngredient: string = '';
-  inputAmount: string ='';
+  inputAmount: number | null = null;
   inputUnit: string = 'gram';
-  items: {name: string; amount: string; unit: string
+  items: {
+    name: string; amount: number; unit: string
 
 
-  } [] = [];
+  }[] = [];
 
-addItem() {
-  if (
-    this.inputIngredient.trim() &&
-    this.inputAmount.trim() &&
-    this.inputUnit.trim()
-  ) {
-    this.items.push({
-      name: this.inputIngredient,
-      amount: this.inputAmount,
-      unit: this.inputUnit
-    });
+  addItem() {
+    if (
+      this.inputIngredient.trim() &&
+      this.inputAmount !== null &&
+      this.inputUnit.trim()
+       
+    ) {
+      this.items.unshift({
+        name: this.inputIngredient,
+        amount: this.inputAmount ,
+        unit: this.inputUnit
+        
+      });
 
-    this.inputIngredient = '';
-    this.inputAmount = '';
-    this.inputUnit = 'gram'; 
+      this.inputIngredient = '';
+      this.inputAmount = null;
+      this.inputUnit = 'gram';
+    }
   }
-}
 
 
-deleteIngredient(index: number) {
-  this.items = this.items.filter((_, i) => i !== index);
-}    
+  deleteIngredient(index: number) {
+    this.items = this.items.filter((_, i) => i !== index);
+  }
+
+
+editIngredient(){}
+
+
+
 
 
 }
