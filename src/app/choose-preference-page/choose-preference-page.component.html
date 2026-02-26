@@ -18,25 +18,25 @@
                 <div class="left-side">
                     <span class="portions-cooking-style">How many portions you need?</span>
                     <div class="portion-choosing-line">
-                        <img class="minus button-image button-preference-cook-choosing"
+                        <img (click)="decreasePortionsNumber()" class="minus button-image button-preference-cook-choosing"
                             src="/assets/minusAndFrameGreen.svg">
                         <span
-                            class="portions-number portions-people-number">1</span><!--just a random number as current placeholder-->
+                            class="portions-number portions-people-number">{{currentPortions}}</span><!--just a random number as current placeholder-->
                         <span class="portion-span">Portions</span>
-                        <img class="add-button-image button-preference-cook-choosing"
+                        <img (click)="increasePortionsNumber()" class="add-button-image button-preference-cook-choosing"
                             src="/assets/plusAndFrameGreen.svg">
                     </div>
                 </div>
                 <div class="right-side">
                     <span class="how-many-span">How many are cooking</span>
                     <div class="add-person-line">
-                        <img class="minus button-image button-preference-cook-choosing"
+                        <img (click)="decreasePersonsNumber()" class="minus button-image button-preference-cook-choosing"
                             src="/assets/minusAndFrameGreen.svg">
                         <span
-                            class="people-number portions-people-number">1</span><!--just a random number as current placeholder-->
+                            class="people-number portions-people-number">{{currentPersons}}</span><!--just a random number as current placeholder-->
                         <span class="portion-span">People</span>
-                        <img class="add-button-image button-preference-cook-choosing"
-                            src="/assets/minusAndFrameGreen.svg">
+                        <img (click)="increasePersonsNumber()" class="add-button-image button-preference-cook-choosing"
+                            src="/assets/plusAndFrameGreen.svg">
                     </div>
                 </div>
             </div>

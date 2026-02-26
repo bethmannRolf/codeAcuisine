@@ -10,4 +10,43 @@ import { HeaderTopGreenComponent } from "../header-top-green/header-top-green.co
 })
 export class ChoosePreferencePageComponent {
 
+
+
+currentPersons:number = 1;
+
+currentPortions:number = 1;
+
+
+increasePortionsNumber(){
+  this.currentPortions++;
+}
+
+decreasePortionsNumber(){
+  if (this.currentPortions > 1) {
+  this.currentPortions--;
+}
+}
+
+
+
+increasePersonsNumber(){
+
+  this.currentPersons++;
+
+}
+
+decreasePersonsNumber(){
+if (this.currentPersons > 1) {
+  this.currentPersons--;
+}
+
+
+}
+
+
+
+
+
+
+
 }

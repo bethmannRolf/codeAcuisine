@@ -35,7 +35,7 @@
 .container-for-lists {
   display: flex;
   max-width: 1087px;
-  gap: 56px;
+  gap: 32px;
 }
 
 .ingredients-left-side {
