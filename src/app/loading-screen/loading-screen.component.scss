@@ -3,33 +3,26 @@
     padding-left: 65px;
     padding-right: 40px;
     padding-top: 40px;
-
- 
-  background-color: #10310B;
-
+    background-color: #10310B;
     height: 100dvh;
 }
 
-.loading-screen-content{
+.loading-screen-content {
     display: flex;
     flex-direction: column;
     gap: 32px;
-
-
 }
 
-.spinner-container{
+.spinner-container {
     width: 253px;
-
     height: 306px;
     background-color: rgba(196, 208, 196, 1);
     border-radius: 20px;
 }
 
 
-.generating-text{
+.generating-text {
     ///font ubuntu
-    
     font-weight: 700;
     font-size: 48px;
     line-height: 100%;
@@ -37,11 +30,7 @@
     color: white;
 }
 
-.center-position{
+.center-position {
     display: flex;
-    // align-items: center;
     justify-content: center;
-    // top: 341px;
-
-
 }
