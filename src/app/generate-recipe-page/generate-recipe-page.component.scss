@@ -191,6 +191,10 @@
     letter-spacing: 0%;
     line-height: 100%;
     display: none;
+
+    &:hover{
+        cursor: pointer;
+    }
 }
 
 .ingredient-element-container-right{

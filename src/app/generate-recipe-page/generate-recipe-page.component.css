@@ -157,6 +157,10 @@
   display: none;
 }
 
+.next-button:hover {
+  cursor: pointer;
+}
+
 .ingredient-element-container-right {
   display: flex;
   justify-content: space-between;

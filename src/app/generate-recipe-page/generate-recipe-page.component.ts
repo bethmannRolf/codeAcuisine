@@ -18,23 +18,23 @@ export class GenerateRecipePageComponent {
   inputAmount: number | null = null;
   inputUnit: string = 'gram';
   items: {
-    name: string; amount: number; unit: string
-
-
-  }[] = [];
+    name: string;
+    amount: number;
+    unit: string
+          }[] = [];
 
   addItem() {
     if (
       this.inputIngredient.trim() &&
       this.inputAmount !== null &&
       this.inputUnit.trim()
-       
+
     ) {
       this.items.unshift({
         name: this.inputIngredient,
-        amount: this.inputAmount ,
+        amount: this.inputAmount,
         unit: this.inputUnit
-        
+
       });
 
       this.inputIngredient = '';
@@ -49,7 +49,7 @@ export class GenerateRecipePageComponent {
   }
 
 
-editIngredient(){}
+  editIngredient() { }
 
 
 

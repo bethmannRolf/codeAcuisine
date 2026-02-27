@@ -8,6 +8,7 @@ import { CookbookComponent } from './cookbook/cookbook.component';
 import { ChoosePreferencePageComponent } from './choose-preference-page/choose-preference-page.component';
 import { RecipeResultsPageComponent } from './recipe-results-page/recipe-results-page.component';
 import { RecipeDetailPageComponent } from './recipe-detail-page/recipe-detail-page.component';
+import { LoadingScreenComponent } from './loading-screen/loading-screen.component';
 
 export const routes: Routes = [
 
@@ -16,7 +17,9 @@ export const routes: Routes = [
   { path: 'cookbook', component: CookbookComponent },
   { path: 'ghfghgf', component: RecipeDetailPageComponent },
   { path: 'gdf', component: CountryPageComponent },
-    { path: '', component: ChoosePreferencePageComponent }
+    { path: 'gdfgdfgdf', component: ChoosePreferencePageComponent },
+        { path: '', component: LoadingScreenComponent }
+
 
   //for testing
 

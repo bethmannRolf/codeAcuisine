@@ -18,7 +18,8 @@
                 <div class="left-side">
                     <span class="portions-cooking-style">How many portions you need?</span>
                     <div class="portion-choosing-line">
-                        <img (click)="decreasePortionsNumber()" class="minus button-image button-preference-cook-choosing"
+                        <img (click)="decreasePortionsNumber()"
+                            class="minus button-image button-preference-cook-choosing"
                             src="/assets/minusAndFrameGreen.svg">
                         <span
                             class="portions-number portions-people-number">{{currentPortions}}</span><!--just a random number as current placeholder-->
@@ -30,7 +31,8 @@
                 <div class="right-side">
                     <span class="how-many-span">How many are cooking</span>
                     <div class="add-person-line">
-                        <img (click)="decreasePersonsNumber()" class="minus button-image button-preference-cook-choosing"
+                        <img (click)="decreasePersonsNumber()"
+                            class="minus button-image button-preference-cook-choosing"
                             src="/assets/minusAndFrameGreen.svg">
                         <span
                             class="people-number portions-people-number">{{currentPersons}}</span><!--just a random number as current placeholder-->
@@ -71,27 +73,33 @@
                         <span class="preference-category-heading">Cuisine</span>
                     </div>
                     <div class="options-container">
-                        <input type="radio" id="german" name="cuisine" value="german">
+                        <input type="radio" id="german" name="cuisine" value="german"
+                            [(ngModel)]="chosenPreferences.cuisine">
                         <label for="german">
                             <span class="option-title-style">German</span>
                         </label>
-                        <input type="radio" id="italian" name="cuisine" value="italian">
+                        <input type="radio" id="italian" name="cuisine" value="italian"
+                            [(ngModel)]="chosenPreferences.cuisine">
                         <label for="italian">
                             <span class="option-title-style">Italian</span>
                         </label>
-                        <input type="radio" id="indian" name="cuisine" value="indian">
+                        <input type="radio" id="indian" name="cuisine" value="indian"
+                            [(ngModel)]="chosenPreferences.cuisine">
                         <label for="indian">
                             <span class="option-title-style">Indian</span>
                         </label>
-                        <input type="radio" id="japanese" name="cuisine" value="japanese">
+                        <input type="radio" id="japanese" name="cuisine" value="japanese"
+                            [(ngModel)]="chosenPreferences.cuisine">
                         <label for="japanese">
                             <span class="option-title-style">Japanese</span>
                         </label>
-                        <input type="radio" id="gourmet" name="cuisine" value="gourmet">
+                        <input type="radio" id="gourmet" name="cuisine" value="gourmet"
+                            [(ngModel)]="chosenPreferences.cuisine">
                         <label for="gourmet">
                             <span class="option-title-style">Gourmet</span>
                         </label>
-                        <input type="radio" id="fusion" name="cuisine" value="fusion">
+                        <input type="radio" id="fusion" name="cuisine" value="fusion"
+                            [(ngModel)]="chosenPreferences.cuisine">
                         <label for="fusion">
                             <span class="option-title-style">Fusion</span>
                         </label>
@@ -105,25 +113,27 @@
                 <div class="diet-preferences-container">
                     <div class="category-heading-container">
                         <img src="/assets/cutleryGreen.svg">
-                        <span class="preference-category-heading">Cooking time:</span>
+                        <span class="preference-category-heading">Diet</span>
                     </div>
                     <div class="options-container">
-                        <input type="radio" id="vegetarian" name="diet" value="vegetarian">
+                        <input type="radio" id="vegetarian" name="diet" value="vegetarian"
+                            [(ngModel)]="chosenPreferences.diet">
                         <label for="vegetarian">
                             <span class="option-title-style">Vegetarian</span>
 
                         </label>
-                        <input type="radio" id="vegan" name="diet" value="vegan">
+                        <input type="radio" id="vegan" name="diet" value="vegan" [(ngModel)]="chosenPreferences.diet">
                         <label for="vegan">
                             <span class="option-title-style">Vegan</span>
 
                         </label>
-                        <input type="radio" id="keto" name="diet" value="keto">
+                        <input type="radio" id="keto" name="diet" value="keto" [(ngModel)]="chosenPreferences.diet">
                         <label for="keto">
                             <span class="option-title-style">Keto</span>
 
                         </label>
-                        <input type="radio" id="no-preferences" name="diet" value="no-prefernces">
+                        <input type="radio" id="no-preferences" name="diet" value="no-prefernces"
+                            [(ngModel)]="chosenPreferences.diet">
                         <label for="no-preferences">
                             <span class="option-title-style">No preferences</span>
 
@@ -135,7 +145,7 @@
             </div>
         </div>
         <div class="button-adjustment-div">
-            <button class="generate-recipe-button"><span>Generate a recipe</span></button>
+            <button (click)="generateRecipe()" class="generate-recipe-button"><span>Generate a recipe</span></button>
         </div>
 
     </div>
