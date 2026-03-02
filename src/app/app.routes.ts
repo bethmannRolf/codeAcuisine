@@ -14,11 +14,11 @@ export const routes: Routes = [
 
   { path: 'lala', component: LandingPageComponent },
   { path: 'hjgkhj', component: GenerateRecipePageComponent },
-  { path: 'cookbook', component: CookbookComponent },
+  { path: '', component: CookbookComponent },
   { path: 'ghfghgf', component: RecipeDetailPageComponent },
   { path: 'gdf', component: CountryPageComponent },
     { path: 'gdfgdfgdf', component: ChoosePreferencePageComponent },
-        { path: '', component: LoadingScreenComponent }
+        { path: 'kjhkhj', component: LoadingScreenComponent }
 
 
   //for testing
