@@ -9,16 +9,18 @@ import { ChoosePreferencePageComponent } from './choose-preference-page/choose-p
 import { RecipeResultsPageComponent } from './recipe-results-page/recipe-results-page.component';
 import { RecipeDetailPageComponent } from './recipe-detail-page/recipe-detail-page.component';
 import { LoadingScreenComponent } from './loading-screen/loading-screen.component';
+import { CookbokSingleSlideComponent } from './cookbok-single-slide/cookbok-single-slide.component';
 
 export const routes: Routes = [
 
   { path: 'lala', component: LandingPageComponent },
   { path: 'hjgkhj', component: GenerateRecipePageComponent },
-  { path: '', component: CookbookComponent },
+  { path: 'bvnvbn', component: CookbookComponent },
   { path: 'ghfghgf', component: RecipeDetailPageComponent },
   { path: 'gdf', component: CountryPageComponent },
     { path: 'gdfgdfgdf', component: ChoosePreferencePageComponent },
-        { path: 'kjhkhj', component: LoadingScreenComponent }
+        { path: 'kjhkhj', component: LoadingScreenComponent },
+          { path: '', component: CookbokSingleSlideComponent }
 
 
   //for testing
