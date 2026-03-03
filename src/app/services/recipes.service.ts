@@ -15,7 +15,7 @@ import {
   collectionData 
 } from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
-import { Recipe } from './interfaces/recipe.interface';
+import { Recipe } from '../interfaces/recipe.interface';
 
 @Injectable({
   providedIn: 'root'

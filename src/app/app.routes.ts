@@ -14,13 +14,13 @@ import { CookbokSingleSlideComponent } from './cookbok-single-slide/cookbok-sing
 export const routes: Routes = [
 
   { path: 'lala', component: LandingPageComponent },
-  { path: 'hjgkhj', component: GenerateRecipePageComponent },
+  { path: '', component: GenerateRecipePageComponent },
   { path: 'bvnvbn', component: CookbookComponent },
   { path: 'ghfghgf', component: RecipeDetailPageComponent },
   { path: 'gdf', component: CountryPageComponent },
     { path: 'gdfgdfgdf', component: ChoosePreferencePageComponent },
         { path: 'kjhkhj', component: LoadingScreenComponent },
-          { path: '', component: CookbokSingleSlideComponent }
+          { path: 'hhfghgf', component: CookbokSingleSlideComponent }
 
 
   //for testing

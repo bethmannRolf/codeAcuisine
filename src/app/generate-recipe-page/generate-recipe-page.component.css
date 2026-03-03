@@ -217,3 +217,17 @@
 .output-ingredients-style {
   color: black;
 }
+
+.ingredients-input-left-side {
+  position: relative;
+}
+
+.suggestions-list {
+  position: absolute;
+  width: 100%;
+  background: white;
+  border: 1px solid #ddd;
+  max-height: 150px;
+  overflow-y: auto;
+  z-index: 10;
+}
