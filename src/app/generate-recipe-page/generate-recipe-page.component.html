@@ -19,18 +19,19 @@
                         <input type="text" [value]="inputIngredient()" (input)="updateIngredient($event)"
                             placeholder="Etwas eingeben..." class="ingredients-input-styling">
 
-                        @if (filteredIngredients().length > 0) {
-                        <ul class="suggestions-list">
-                            @for (ingredient of filteredIngredients(); track ingredient) {
-                            <li (click)="selectIngredient(ingredient)">
-                                {{ ingredient }}
-                            </li>
+                        <div class="suggestion-div"> @if (filteredIngredients().length > 0) {
+                            <ul class="suggestions-list">
+                                @for (ingredient of filteredIngredients(); track ingredient) {
+                                <li class="suggest-list-span-style" (click)="selectIngredient(ingredient)">
+                                    {{ ingredient }}
+                                </li>
+                                }
+                            </ul>
                             }
-                        </ul>
-                        }
+                        </div>
                     </div>
 
-<!-- down ng model Version left side -->
+                    <!-- down ng model Version left side -->
 
                     <!-- <div class="ingredients-input-left-side">
                         <span class="heading-ingredients-input-left-side">Ingredients</span>

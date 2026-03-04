@@ -30,7 +30,7 @@ filteredIngredients = computed(() => {
 
   return this.allIngredients()
     .filter(i => i.toLowerCase().startsWith(value))
-    .slice(0, 10); // 11 suggesttions at the moment , maybe 5 later
+    .slice(0, 5); // 10 suggesttions at the moment , maybe 5 later
 });
 
 
