@@ -31,13 +31,6 @@
                         </div>
                     </div>
 
-                    <!-- down ng model Version left side -->
-
-                    <!-- <div class="ingredients-input-left-side">
-                        <span class="heading-ingredients-input-left-side">Ingredients</span>
-                        <input type="text" [value]="inputIngredient()" (input)="updateIngredient($event)"
-                            placeholder="Etwas eingeben..." class="ingredients-input-styling">
-                    </div> -->
 
 
 
@@ -70,55 +63,54 @@
                     </span>
 
                     <ul class="ingredients-list">
-@for (item of items; track $index; let i = $index) {
+                        @for (item of items; track $index; let i = $index) {
 
-<li>
-  <div class="ingredient-element-container-right">
+                        <li>
+                            <div class="ingredient-element-container-right">
 
-    <div class="output-ingredients-style">
+                                <div class="output-ingredients-style">
 
-      @if (editIndex === i) {
+                                    @if (editIndex === i) {
 
-        <input type="number" [(ngModel)]="item.amount">
+                                    <input type="number" [(ngModel)]="item.amount">
 
-        <select [(ngModel)]="item.unit">
-          <option value="gram">gram</option>
-          <option value="ml">ml</option>
-          <option value="piece">piece/s</option>
-        </select>
+                                    <select [(ngModel)]="item.unit" class="drop-down-ingredients">
+                                        <option value="gram">gram</option>
+                                        <option value="ml">ml</option>
+                                        <option value="piece">piece/s</option>
+                                    </select>
 
-        <input type="text" [(ngModel)]="item.name">
 
-      } @else {
+                                    <span>{{ item.name }}</span>
+                                    <!-- <input type="text" [(ngModel)]="item.name"> -->
 
-        {{ item.amount }} {{ item.unit }} {{ item.name }}
+                                    } @else {
 
-      }
+                                    {{ item.amount }} {{ item.unit }} {{ item.name }}
 
-    </div>
+                                    }
 
-    <div class="delete-add-container">
+                                </div>
 
-      @if (editIndex === i) {
-        <img class="delete-add-button"
-             (click)="saveEdit()"
-             src="/assets/saveImage.svg">
-      } @else {
-        <img class="delete-add-button"
-             (click)="editIngredient(i)"
-             src="/assets/editGenerateRecipe.svg">
-      }
+                                <div class="delete-add-container">
 
-      <img class="delete-add-button"
-           (click)="deleteIngredient(i)"
-           src="/assets/deleteButton.svg">
+                                    @if (editIndex === i) {
 
-    </div>
+                                    <img class="delete-add-button" (click)="saveEdit()" src="/assets/saveImage.svg">
+                                    } @else {
+                                    <img class="delete-add-button" (click)="editIngredient(i)"
+                                        src="/assets/editGenerateRecipe.svg">
+                                    }
 
-  </div>
-</li>
+                                    <img class="delete-add-button" (click)="deleteIngredient(i)"
+                                        src="/assets/deleteButton.svg">
 
-}
+                                </div>
+
+                            </div>
+                        </li>
+
+                        }
                     </ul>
                 </div>
 

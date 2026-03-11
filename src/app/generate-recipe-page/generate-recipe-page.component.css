@@ -59,11 +59,17 @@
   flex-direction: column;
   gap: 32px;
   border-radius: 20px;
+  min-width: 478px;
 }
 
 .add-ingredient-button {
   width: 18px;
   height: 18px;
+}
+
+.add-ingredient-button:hover {
+  cursor: pointer;
+  scale: 1.05;
 }
 
 .ingredients-input-left-side {
@@ -178,10 +184,12 @@
 
 .delete-add-button:hover {
   cursor: pointer;
+  scale: 1.05;
 }
 
 .delete-add-container {
   display: flex;
+  align-items: center;
   gap: 16px;
 }
 
@@ -220,6 +228,9 @@
 }
 
 .output-ingredients-style {
+  display: flex;
+  align-items: center;
+  gap: 16px;
   color: black;
 }
 
