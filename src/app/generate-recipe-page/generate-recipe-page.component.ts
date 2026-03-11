@@ -19,19 +19,19 @@ export class GenerateRecipePageComponent {
   private ingredientService = inject(IngredientService);
 
 
-
+  editIndex: number | null = null;
   allIngredients = this.ingredientService.ingredients;
 
- 
 
-filteredIngredients = computed(() => {
-  const value = this.inputIngredient().toLowerCase();
-  if (value.length < 2) return [];
 
-  return this.allIngredients()
-    .filter(i => i.toLowerCase().startsWith(value))
-    .slice(0, 5); // 10 suggesttions at the moment , maybe 5 later
-});
+  filteredIngredients = computed(() => {
+    const value = this.inputIngredient().toLowerCase();
+    if (value.length < 2) return [];
+
+    return this.allIngredients()
+      .filter(i => i.toLowerCase().startsWith(value))
+      .slice(0, 5); // 10 suggesttions at the moment , maybe 5 later
+  });
 
 
   selectIngredient(ingredient: string) {
@@ -102,10 +102,36 @@ filteredIngredients = computed(() => {
 
   deleteIngredient(index: number) {
     this.items = this.items.filter((_, i) => i !== index);
+
+
+
   }
 
 
-  editIngredient() { }
+
+
+
+
+
+
+
+editIngredient(index: number) {
+  this.editIndex = index;
+}
+
+
+
+
+
+saveEdit() {
+  this.editIndex = null;
+}
+
+
+
+
+
+
 
 
 
