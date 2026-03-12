@@ -41,6 +41,34 @@
                         <div class="size-input-second-line">
                             <input type="number" min="0" [(ngModel)]="inputAmount" placeholder="100"
                                 class="number-size-ingredients">
+
+
+                            <div class="select-wrapper">
+                                <select [(ngModel)]="inputUnit" class="drop-down-ingredients" id="ingredientAmount"
+                                    name="ingredientAmount">
+                                    <option value="gram">gram</option>
+                                    <option value="ml">ml</option>
+                                    <option value="piece">piece/s</option>
+                                </select>
+                            </div>
+
+
+                            <!-- <div class="select-wrapper" [class.open]="dropdownOpen">
+                                <select [(ngModel)]="inputUnit" (focus)="dropdownOpen = true"
+                                    (blur)="dropdownOpen = false" class="drop-down-ingredients">
+                                    <option value="gram">gram</option>
+                                    <option value="ml">ml</option>
+                                    <option value="piece">piece/s</option>
+                                </select>
+                            </div> -->
+
+
+
+
+                            <!-- 
+
+
+
                             <select [(ngModel)]="inputUnit" class="drop-down-ingredients" id="ingredientAmount"
                                 name="ingredientAmount">
 
@@ -48,7 +76,10 @@
                                 <option value="ml">ml</option>
                                 <option value="piece">piece/s</option>
 
-                            </select>
+
+                            </select> -->
+
+
                             <img class="add-ingredient-button" (click)="addItem()" src="/assets/addImage.svg">
 
                         </div>
@@ -63,26 +94,26 @@
                     </span>
 
                     <ul class="ingredients-list">
-                        @for (item of items; track $index; let i = $index) {
+                        @for (item of items; track item; let i = $index) {
 
-                        <li>
+                        <li [class.editing]="editIndex === i">
                             <div class="ingredient-element-container-right">
 
                                 <div class="output-ingredients-style">
 
                                     @if (editIndex === i) {
 
-                                    <input type="number" [(ngModel)]="item.amount">
+                                    <input class="number-size-ingredients" type="number" [(ngModel)]="item.amount">
 
                                     <select [(ngModel)]="item.unit" class="drop-down-ingredients">
-                                        <option value="gram">gram</option>
+                                        <option class="option-style" value="gram">gram</option>
                                         <option value="ml">ml</option>
                                         <option value="piece">piece/s</option>
                                     </select>
 
 
-                                    <span>{{ item.name }}</span>
-                                    <!-- <input type="text" [(ngModel)]="item.name"> -->
+                                    <span class="ingredient-name">{{ item.name }}</span>
+
 
                                     } @else {
 
@@ -96,7 +127,7 @@
 
                                     @if (editIndex === i) {
 
-                                    <img class="delete-add-button" (click)="saveEdit()" src="/assets/checkImage.svg">
+                                    <img class="save-button" (click)="saveEdit()" src="/assets/checkImage.svg">
                                     } @else {
                                     <img class="delete-add-button" (click)="editIngredient(i)"
                                         src="/assets/editGenerateRecipe.svg">

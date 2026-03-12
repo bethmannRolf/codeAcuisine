@@ -149,6 +149,10 @@
   align-items: center;
 }
 
+.option-style {
+  background-color: transparent;
+}
+
 .flex-end-next-coontainer {
   display: flex !important;
   justify-content: flex-end;
@@ -185,6 +189,18 @@
 .delete-add-button:hover {
   cursor: pointer;
   scale: 1.05;
+  background-color: rgba(57, 96, 57, 0.1);
+}
+
+.save-button {
+  width: 19px;
+  height: 19px;
+}
+
+.save-button:hover {
+  cursor: pointer;
+  scale: 1.05;
+  background-color: rgba(250, 240, 230, 0.6);
 }
 
 .delete-add-container {
@@ -262,4 +278,89 @@
 
 .suggestion-div {
   padding-left: 16px;
+}
+
+.ingredients-list li:not(.editing):hover {
+  background-color: linen;
+}
+
+.ingredient-name {
+  transition: transform 0.2s ease;
+}
+
+.editing .ingredient-name {
+  transform: translateX(10px);
+}
+
+.editing input,
+.editing select {
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.drop-down-ingredients {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
+  outline: none;
+}
+
+.drop-down-ingredients {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: rgba(250, 240, 230, 0.8);
+  border-radius: 20px;
+  border: none;
+  padding: 8px 32px 8px 12px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.select-wrapper {
+  position: relative;
+  display: inline-block;
+  /* besser für Select */
+}
+
+.select-wrapper select {
+  appearance: none;
+  /* Entfernt Standard-Pfeil */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-right: 24px;
+  /* Platz für Pfeil */
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.select-wrapper::after {
+  content: "";
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #10310b;
+  pointer-events: none;
+  transition: transform 0.2s ease;
+}
+
+.select-wrapper:focus-within::after {
+  transform: translateY(-50%) rotate(180deg);
 }

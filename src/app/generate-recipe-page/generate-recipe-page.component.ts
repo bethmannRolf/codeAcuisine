@@ -40,7 +40,7 @@ export class GenerateRecipePageComponent {
 
 
 
-
+dropdownOpen = false;
   inputIngredient = signal('');
   inputAmount: number | null = null;
   inputUnit: string = 'gram';
@@ -53,25 +53,7 @@ export class GenerateRecipePageComponent {
 
 
 
-  // addItem() {   // ng model before signal, but how shouuld i bring it to the right side ?
-  //   if (
-  //     this.inputIngredient.trim() &&
-  //     this.inputAmount !== null &&
-  //     this.inputUnit.trim()
 
-  //   ) {
-  //     this.items.unshift({
-  //       name: this.inputIngredient,
-  //       amount: this.inputAmount,
-  //       unit: this.inputUnit
-
-  //     });
-
-  //     this.inputIngredient = '';
-  //     this.inputAmount = null;
-  //     this.inputUnit = 'gram';
-  //   }
-  // }
 
   addItem() {
     if (
