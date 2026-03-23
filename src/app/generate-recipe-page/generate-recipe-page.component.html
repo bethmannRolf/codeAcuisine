@@ -17,13 +17,13 @@
                         </span>
 
                         <input type="text" [value]="inputIngredient()" (input)="updateIngredient($event)"
-                            placeholder="Etwas eingeben..." class="ingredients-input-styling">
+                             class="ingredients-input-styling">
 
                         <div class="suggestion-div"> @if (filteredIngredients().length > 0) {
                             <ul class="suggestions-list">
                                 @for (ingredient of filteredIngredients(); track ingredient) {
                                 <li class="suggest-list-span-style" (click)="selectIngredient(ingredient)">
-                                    {{ ingredient }}
+                                    {{ ingredient }} 1
                                 </li>
                                 }
                             </ul>
@@ -43,14 +43,40 @@
                                 class="number-size-ingredients">
 
 
+
+
                             <div class="select-wrapper">
+                                <div class="custom-select" (click)="$event.stopPropagation(); toggleDropdown()">
+
+                                    <div class="selected">
+                                        {{ inputUnit }}
+
+                                        <img src="assets/arrowDropDown.svg" class="dropdown-arrow"
+                                            [class.open]="dropdownOpen">
+                                    </div>
+
+                                    @if (dropdownOpen) {
+                                    <div class="options">
+                                        @for (unit of units; track unit) {
+                                        <div class="option" [class.active]="unit === inputUnit"
+                                            (click)="selectUnit(unit, $event)">
+                                            {{ unit }}
+                                        </div>
+                                        }
+                                    </div>
+                                    }
+
+                                </div>
+                            </div>
+
+                            <!-- <div class="select-wrapper">
                                 <select [(ngModel)]="inputUnit" class="drop-down-ingredients" id="ingredientAmount"
                                     name="ingredientAmount">
                                     <option value="gram">gram</option>
                                     <option value="ml">ml</option>
                                     <option value="piece">piece/s</option>
                                 </select>
-                            </div>
+                            </div> -->
 
 
                             <!-- <div class="select-wrapper" [class.open]="dropdownOpen">

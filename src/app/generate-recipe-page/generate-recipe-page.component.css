@@ -102,6 +102,7 @@
   padding-right: 12px;
   padding-bottom: 8px;
   padding-left: 12px;
+  height: 36px;
   color: #10310b;
   font-size: 16px;
   line-height: 20px;
@@ -124,6 +125,8 @@
 }
 
 .number-size-ingredients {
+  height: 36px;
+  width: 61px;
   background-color: rgba(250, 240, 230, 0.8);
   border-radius: 20px;
   border: none;
@@ -308,59 +311,55 @@
   }
 }
 
-.drop-down-ingredients {
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  border: none;
-  outline: none;
+.custom-select {
+  position: relative;
+  cursor: pointer;
+  height: 36px;
 }
 
-.drop-down-ingredients {
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
+.selected {
+  padding-top: 8px;
+  padding-right: 12px;
+  padding-bottom: 8px;
+  padding-left: 12px;
+  border: none;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   background-color: rgba(250, 240, 230, 0.8);
   border-radius: 20px;
-  border: none;
-  padding: 8px 32px 8px 12px;
-  font-size: 16px;
-  cursor: pointer;
 }
 
-.select-wrapper {
-  position: relative;
-  display: inline-block;
-  /* besser für Select */
-}
-
-.select-wrapper select {
-  appearance: none;
-  /* Entfernt Standard-Pfeil */
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  padding-right: 24px;
-  /* Platz für Pfeil */
-  font-size: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-.select-wrapper::after {
-  content: "";
+.options {
   position: absolute;
-  right: 12px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 0;
-  height: 0;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  border-top: 6px solid #10310b;
-  pointer-events: none;
+  width: 100%;
+  background: white;
+  border: 1px solid #ccc;
+  top: 100%;
+  left: 0;
+  z-index: 100;
+}
+
+.option {
+  padding: 8px;
+}
+
+.option:hover {
+  background-color: #f0f0f0;
+}
+
+.option.active {
+  background-color: #e0e0e0;
+  font-weight: 600;
+}
+
+.dropdown-arrow {
+  width: 12px;
+  margin-left: 8px;
   transition: transform 0.2s ease;
 }
 
-.select-wrapper:focus-within::after {
-  transform: translateY(-50%) rotate(180deg);
+.dropdown-arrow.open {
+  transform: rotate(180deg);
 }

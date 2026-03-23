@@ -4,6 +4,9 @@ import { RouterLink } from "@angular/router";
 import { FormsModule } from '@angular/forms';
 import { signal, computed } from '@angular/core';
 import { IngredientService } from '../services/ingredient.service';
+import { HostListener } from '@angular/core';
+
+
 
 
 @Component({
@@ -15,6 +18,29 @@ import { IngredientService } from '../services/ingredient.service';
 
 
 export class GenerateRecipePageComponent {
+
+
+@HostListener('document:click')
+closeDropdown() {
+  this.dropdownOpen = false;
+}
+
+units = ['gram', 'ml', 'piece/s'];
+
+toggleDropdown() {
+  this.dropdownOpen = !this.dropdownOpen;
+}
+
+selectUnit(unit: string, event: Event) {
+  event.stopPropagation();
+  this.inputUnit = unit;
+  this.dropdownOpen = false;
+}
+
+
+
+
+
 
   private ingredientService = inject(IngredientService);
 
@@ -51,6 +77,10 @@ dropdownOpen = false;
   }[] = [];
 
 
+  
+
+
+  
 
 
 
