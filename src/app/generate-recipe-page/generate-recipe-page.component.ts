@@ -20,22 +20,34 @@ import { HostListener } from '@angular/core';
 export class GenerateRecipePageComponent {
 
 
-@HostListener('document:click')
-closeDropdown() {
-  this.dropdownOpen = false;
-}
 
-units = ['gram', 'ml', 'piece/s'];
+  units = ['gram', 'ml', 'piece/s'];
 
-toggleDropdown() {
-  this.dropdownOpen = !this.dropdownOpen;
-}
 
-selectUnit(unit: string, event: Event) {
-  event.stopPropagation();
-  this.inputUnit = unit;
-  this.dropdownOpen = false;
-}
+
+  toggleInputDropdown() {
+    this.inputDropdownOpen = !this.inputDropdownOpen;
+  }
+
+  selectInputUnit(unit: string, event: Event) {
+    event.stopPropagation();
+    this.inputUnit = unit;
+    this.inputDropdownOpen = false;
+  }
+
+
+
+  toggleDropdown(index: number) {
+    this.openDropdownIndex = this.openDropdownIndex === index ? null : index;
+  }
+
+  selectUnit(unit: string, index: number, event: Event) {
+    event.stopPropagation();
+    this.items[index].unit = unit;
+    this.openDropdownIndex = null;
+  }
+
+
 
 
 
@@ -66,7 +78,20 @@ selectUnit(unit: string, event: Event) {
 
 
 
-dropdownOpen = false;
+ 
+
+
+ 
+  inputDropdownOpen = false;
+
+ 
+  openDropdownIndex: number | null = null;
+
+
+
+
+
+
   inputIngredient = signal('');
   inputAmount: number | null = null;
   inputUnit: string = 'gram';
@@ -75,14 +100,6 @@ dropdownOpen = false;
     amount: number;
     unit: string
   }[] = [];
-
-
-  
-
-
-  
-
-
 
 
   addItem() {
@@ -120,33 +137,16 @@ dropdownOpen = false;
   }
 
 
+  editIngredient(index: number) {
+    this.editIndex = index;
+    this.openDropdownIndex = null;
+  }
 
 
 
-
-
-
-
-editIngredient(index: number) {
-  this.editIndex = index;
-}
-
-
-
-
-
-saveEdit() {
-  this.editIndex = null;
-}
-
-
-
-
-
-
-
-
-
-
+  saveEdit() {
+    this.editIndex = null;
+    this.openDropdownIndex = null;
+  }
 
 }

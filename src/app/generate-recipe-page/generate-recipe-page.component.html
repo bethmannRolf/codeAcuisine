@@ -17,7 +17,7 @@
                         </span>
 
                         <input type="text" [value]="inputIngredient()" (input)="updateIngredient($event)"
-                             class="ingredients-input-styling">
+                            class="ingredients-input-styling">
 
                         <div class="suggestion-div"> @if (filteredIngredients().length > 0) {
                             <ul class="suggestions-list">
@@ -46,20 +46,20 @@
 
 
                             <div class="select-wrapper">
-                                <div class="custom-select" (click)="$event.stopPropagation(); toggleDropdown()">
+                                <div class="custom-select" (click)="$event.stopPropagation(); toggleInputDropdown()">
 
                                     <div class="selected">
                                         {{ inputUnit }}
 
                                         <img src="assets/arrowDropDown.svg" class="dropdown-arrow"
-                                            [class.open]="dropdownOpen">
+                                            [class.open]="inputDropdownOpen">
                                     </div>
 
-                                    @if (dropdownOpen) {
+                                    @if (inputDropdownOpen) {
                                     <div class="options">
                                         @for (unit of units; track unit) {
                                         <div class="option" [class.active]="unit === inputUnit"
-                                            (click)="selectUnit(unit, $event)">
+                                            (click)="selectInputUnit(unit, $event)">
                                             {{ unit }}
                                         </div>
                                         }
@@ -68,8 +68,6 @@
 
                                 </div>
                             </div>
-
-
 
                             <img class="add-ingredient-button" (click)="addItem()" src="/assets/addImage.svg">
 
@@ -92,21 +90,45 @@
 
                                 <div class="output-ingredients-style">
 
+           
+
+
+
+
                                     @if (editIndex === i) {
 
                                     <input class="number-size-ingredients" type="number" [(ngModel)]="item.amount">
 
-                                    <select [(ngModel)]="item.unit" class="drop-down-ingredients">
-                                        <option class="option-style" value="gram">gram</option>
-                                        <option value="ml">ml</option>
-                                        <option value="piece">piece/s</option>
-                                    </select>
+                                    <div class="custom-select" (click)="$event.stopPropagation(); toggleDropdown(i)">
 
+                                        <div class="selected">
+                                            {{ item.unit }}
+
+                                            <img src="/assets/addImage.svg" class="dropdown-arrow"
+                                                [class.open]="openDropdownIndex === i">
+                                        </div>
+
+                                        @if (openDropdownIndex === i) {
+                                        <div class="options">
+                                            @for (unit of units; track unit) {
+                                            <div class="option" [class.active]="unit === item.unit"
+                                                (click)="selectUnit(unit, i, $event)">
+                                                {{ unit }}
+                                            </div>
+                                            }
+                                        </div>
+                                        }
+
+                                    </div>
 
                                     <span class="ingredient-name">{{ item.name }}</span>
 
+                                    }
 
-                                    } @else {
+
+
+
+                                    @else {
 
                                     {{ item.amount }} {{ item.unit }} {{ item.name }}
 
