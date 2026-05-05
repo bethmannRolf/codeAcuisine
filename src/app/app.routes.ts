@@ -10,6 +10,7 @@ import { RecipeResultsPageComponent } from './recipe-results-page/recipe-results
 import { RecipeDetailPageComponent } from './recipe-detail-page/recipe-detail-page.component';
 import { LoadingScreenComponent } from './loading-screen/loading-screen.component';
 import { CookbokSingleSlideComponent } from './cookbok-single-slide/cookbok-single-slide.component';
+import { DummyPageComponent } from './dummy-page/dummy-page.component';
 
 export const routes: Routes = [
 
@@ -18,9 +19,11 @@ export const routes: Routes = [
   { path: 'bvnvbn', component: CookbookComponent },
   { path: 'ghfghgf', component: RecipeDetailPageComponent },
   { path: 'gdf', component: CountryPageComponent },
-    { path: '', component: ChoosePreferencePageComponent },
+    { path: 'hgfgh', component: ChoosePreferencePageComponent },
         { path: 'gdfgdf', component: LoadingScreenComponent },
-          { path: 'hhfghgf', component: CookbokSingleSlideComponent }
+          { path: 'hhfghgf', component: CookbokSingleSlideComponent },
+           { path: '', component: DummyPageComponent }
+
 
 
   //for testing
