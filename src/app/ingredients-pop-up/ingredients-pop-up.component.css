@@ -1,4 +1,14 @@
+* {
+  color: white;
+}
+
 .pop-up-inner-wrapper {
   background-color: #396039;
   border-radius: 30px;
+  width: 567px;
+  height: 345px;
+  padding-top: 44px;
+  padding-right: 64px;
+  padding-bottom: 64px;
+  padding-left: 64px;
 }
