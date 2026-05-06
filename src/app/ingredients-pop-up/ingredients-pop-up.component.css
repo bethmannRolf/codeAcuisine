@@ -15,6 +15,13 @@
   flex-direction: column;
 }
 
+.pop-up-heading {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
 .close-line-div {
   display: flex;
   justify-content: flex-end;
@@ -34,4 +41,22 @@
   padding-right: 26px;
   padding-bottom: 16px;
   padding-left: 26px;
+}
+
+.close-button-style {
+  width: 24px;
+  height: 24px;
+  color: linen;
+}
+
+.arrow-right-styling {
+  width: 24px;
+  color: linen;
+}
+
+.back-to-ingredients-span {
+  font-size: 18pxpx;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 0%;
 }
