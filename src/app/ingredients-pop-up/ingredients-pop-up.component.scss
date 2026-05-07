@@ -12,14 +12,12 @@
     padding-right: 64px;
     padding-bottom: 64px;
     padding-left: 64px;
-
-
     display: flex;
     flex-direction: column;
 
 }
 
-.pop-up-heading{
+.pop-up-heading {
     font-size: 28px;
     font-weight: 600;
     line-height: 100%;
@@ -36,13 +34,11 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
-
 }
-
 
 .back-to-ingredients-container {
     display: flex;
-    // flex-direction: row;
+ 
     gap: 10px;
     border-radius: 5px;
     padding-top: 16px;
@@ -54,20 +50,27 @@
 .close-button-style {
     width: 24px;
     height: 24px;
-    color: rgba(250, 240, 230, 1);
+     background-color: rgba(250, 240, 230, 0.2);
+
+    &:hover {
+        scale: 1.05;
+    }
+
 }
 
 .arrow-right-styling {
-
     width: 24px;
-
     color: rgba(250, 240, 230, 1);
+
+    &:hover {
+        scale: 1.05;
+          background-color: rgba(250, 240, 230, 0.2);
+    }
 }
 
-
-.back-to-ingredients-span{
-//font quicksand
-        font-size: 18pxpx;
+.back-to-ingredients-span {
+    //font quicksand
+    font-size: 18px;
     font-weight: 600;
     line-height: 26px;
     letter-spacing: 0%;

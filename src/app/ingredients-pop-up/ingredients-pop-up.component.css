@@ -46,7 +46,11 @@
 .close-button-style {
   width: 24px;
   height: 24px;
-  color: linen;
+  background-color: rgba(250, 240, 230, 0.2);
+}
+
+.close-button-style:hover {
+  scale: 1.05;
 }
 
 .arrow-right-styling {
@@ -54,8 +58,13 @@
   color: linen;
 }
 
+.arrow-right-styling:hover {
+  scale: 1.05;
+  background-color: rgba(250, 240, 230, 0.2);
+}
+
 .back-to-ingredients-span {
-  font-size: 18pxpx;
+  font-size: 18px;
   font-weight: 600;
   line-height: 26px;
   letter-spacing: 0%;
