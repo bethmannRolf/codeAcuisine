@@ -11,6 +11,7 @@ import { RecipeDetailPageComponent } from './recipe-detail-page/recipe-detail-pa
 import { LoadingScreenComponent } from './loading-screen/loading-screen.component';
 import { CookbokSingleSlideComponent } from './cookbok-single-slide/cookbok-single-slide.component';
 import { DummyPageComponent } from './dummy-page/dummy-page.component';
+import { RecipeResultSingleContainerComponent } from './recipe-result-single-container/recipe-result-single-container.component';
 
 export const routes: Routes = [
 
@@ -19,10 +20,11 @@ export const routes: Routes = [
   { path: 'bvnvbn', component: CookbookComponent },
   { path: 'ghfghgf', component: RecipeDetailPageComponent },
   { path: 'gdf', component: CountryPageComponent },
-    { path: 'hgfgh', component: ChoosePreferencePageComponent },
-        { path: 'gdfgdf', component: LoadingScreenComponent },
-          { path: 'hhfghgf', component: CookbokSingleSlideComponent },
-           { path: '', component: DummyPageComponent }
+  { path: 'hgfgh', component: ChoosePreferencePageComponent },
+  { path: 'gdfgdf', component: LoadingScreenComponent },
+  { path: 'hhfghgf', component: CookbokSingleSlideComponent },
+   { path: '', component: RecipeResultSingleContainerComponent },
+  { path: 'fdsfd', component: DummyPageComponent }
 
 
 
